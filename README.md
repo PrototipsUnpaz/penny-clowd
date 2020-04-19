@@ -1,8 +1,16 @@
-# Proyecto [NOMBRE DEL PROYECTO]
+# Proyecto: Penny the clown
 # Unpaz 2020
 
 ## Descripción
-[REEMPLAZAR CON DESCRIPCIÓN DEL PROYECTO]
+
+Juego basado en circus.
+El personaje se moverá automáticamente hacia la derecha.
+El jugador podrá presionar la pantalla para que el personajes salte.
+Habrá varios niveles y el personaje deberá sortear distintos obstáculos temáticos por nivel.
+Hay un número fijo de vidas/intentos. 3
+Se podrán conseguir vidas al recolectar una determinada cantidad de items durante los niveles.
+
+Integrantes del proyecto: Cristian Obregón, Enzo Costilla, Belén Améndola.
 
 ## Instrucciones de ejecución
 
