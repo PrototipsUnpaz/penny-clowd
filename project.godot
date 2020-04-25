@@ -17,7 +17,6 @@ _global_script_class_icons={
 
 config/name="PennytheClowd"
 run/main_scene="res://scenes/WorldTest.tscn"
-config/icon="res://assets/icon.png"
 
 [input]
 
