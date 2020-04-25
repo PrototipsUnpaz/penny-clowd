@@ -1,14 +1,15 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://assets/personaje/002.png" type="Texture" id=1]
+[ext_resource path="res://assets/personaje/correr/002.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=2]
-[ext_resource path="res://assets/personaje/004.png" type="Texture" id=3]
-[ext_resource path="res://assets/personaje/003.png" type="Texture" id=4]
-[ext_resource path="res://assets/personaje/006.png" type="Texture" id=5]
-[ext_resource path="res://assets/personaje/001.png" type="Texture" id=6]
-[ext_resource path="res://assets/personaje/005.png" type="Texture" id=7]
-[ext_resource path="res://assets/personaje/008.png" type="Texture" id=8]
-[ext_resource path="res://assets/personaje/007.png" type="Texture" id=9]
+[ext_resource path="res://assets/personaje/correr/004.png" type="Texture" id=3]
+[ext_resource path="res://assets/personaje/correr/003.png" type="Texture" id=4]
+[ext_resource path="res://assets/personaje/correr/006.png" type="Texture" id=5]
+[ext_resource path="res://assets/personaje/correr/001.png" type="Texture" id=6]
+[ext_resource path="res://assets/personaje/correr/005.png" type="Texture" id=7]
+[ext_resource path="res://assets/personaje/correr/008.png" type="Texture" id=8]
+[ext_resource path="res://assets/personaje/correr/007.png" type="Texture" id=9]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 159.71, 274.604 )

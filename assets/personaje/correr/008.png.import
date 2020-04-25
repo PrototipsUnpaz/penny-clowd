@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/008.png-bf890e90a5309bdc8114d44aff824781.stex"
+path="res://.import/008.png-27c9a044b0737e2b3ade2ee4bd2320a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/008.png"
-dest_files=[ "res://.import/008.png-bf890e90a5309bdc8114d44aff824781.stex" ]
+source_file="res://assets/personaje/correr/008.png"
+dest_files=[ "res://.import/008.png-27c9a044b0737e2b3ade2ee4bd2320a3.stex" ]
 
 [params]
 
