@@ -1,4 +1,4 @@
-# Proyecto: Penny the clown
+# Proyecto: Penny the clowd
 # Unpaz 2020
 
 ## Descripción
