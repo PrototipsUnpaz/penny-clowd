@@ -10,7 +10,6 @@
 [ext_resource path="res://assets/personaje/correr/008.png" type="Texture" id=8]
 [ext_resource path="res://assets/personaje/correr/007.png" type="Texture" id=9]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 159.71, 274.604 )
 
@@ -34,3 +33,7 @@ frames = SubResource( 2 )
 animation = "Correr"
 frame = 1
 playing = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 0, -221 )
+current = true
