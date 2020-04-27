@@ -24,16 +24,23 @@ animations = [ {
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="Collision" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -68.1806, 19.4802 )
+shape = SubResource( 1 )
+
+[node name="Collision2" type="CollisionShape2D" parent="."]
 position = Vector2( -68.1806, 19.4802 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Correr"
-frame = 1
+frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 0, -221 )
 current = true
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
