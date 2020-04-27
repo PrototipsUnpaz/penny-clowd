@@ -18,6 +18,11 @@ _global_script_class_icons={
 config/name="PennytheClowd"
 run/main_scene="res://scenes/WorldTest.tscn"
 
+[display]
+
+window/size/width=1080
+window/size/height=720
+
 [input]
 
 Touch={
