@@ -3,13 +3,12 @@
 [ext_resource path="res://assets/enemigos/pared/pared.png" type="Texture" id=1]
 [ext_resource path="res://scenes/enemigos/pared_enemigo/ParedEnemigo.gd" type="Script" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 33.9737, 117.933 )
+extents = Vector2( 33.9737, 117.054 )
 
 [node name="pared" type="Sprite"]
-position = Vector2( 0.386886, -1.16066 )
-scale = Vector2( 0.714437, 0.630829 )
+position = Vector2( -4.03915, -18.8648 )
+scale = Vector2( 0.819819, 0.765975 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 

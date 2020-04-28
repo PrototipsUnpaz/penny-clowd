@@ -17,5 +17,5 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	queue_free()
+	get_tree().reload_current_scene()
 	pass
