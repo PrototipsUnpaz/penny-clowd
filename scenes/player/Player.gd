@@ -14,3 +14,8 @@ func _physics_process(delta):
 		velocity.y = -600
 	move_and_slide(velocity)
 	pass
+
+
+func _on_Area2D_area_entered(area):
+	queue_free()
+	pass # Replace with function body.
