@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
-const Speed = 150
+const speed = 150
 var velocity = Vector2()
 
 func _physics_process(delta):
 	velocity.y +=20
-	velocity.x = Speed
+	velocity.x = speed
 	move_and_slide(velocity,Vector2(0,-1))
 	if is_on_floor():
 		velocity.y = 0
@@ -17,5 +17,5 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	queue_free()
-	pass # Replace with function body.
+	get_tree().reload_current_scene()
+	pass
