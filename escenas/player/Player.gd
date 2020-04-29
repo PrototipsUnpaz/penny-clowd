@@ -12,7 +12,7 @@ func _physics_process(delta):
 		velocity.y = 0
 	if Input.is_action_just_pressed("Touch") and is_on_floor():
 		velocity.y = -580
-		$AnimatedSprite.play("Salto")
+		$AnimatedSprite.play("SALTO")
 	move_and_slide(velocity)
 	pass
 
