@@ -14,9 +14,10 @@ func _physics_process(delta):
 		velocity.y = -580
 		$AnimatedSprite.play("SALTO")
 	move_and_slide(velocity)
+	
 	pass
 
-
+	
 func _on_Area2D_area_entered(area):
 	get_tree().reload_current_scene()
 	pass

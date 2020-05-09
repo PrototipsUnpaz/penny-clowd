@@ -9,28 +9,33 @@
 
 [node name="WorldTest" type="Node2D"]
 
+[node name="suelo-colision" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3863.73, 619.563 )
+scale = Vector2( 0.720968, 0.922322 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 52.2054, 570.287 )
+position = Vector2( 50.0469, 565.97 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
-[node name="SueloColision" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5299.09, 621.418 )
-
 [node name="CirculoFuego" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2060.13, 344.533 )
+position = Vector2( 2081.71, 260.353 )
+scale = Vector2( 0.720968, 0.922322 )
+
+[node name="CirculoFuego2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4209.97, 251.719 )
 scale = Vector2( 0.720968, 0.922322 )
 
 [node name="Sprite" parent="." instance=ExtResource( 5 )]
 position = Vector2( 510.217, 582.005 )
 
 [node name="pared" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1320.05, 522.358 )
+position = Vector2( 1212.13, 528.833 )
 scale = Vector2( 0.714437, 0.816655 )
 
 [node name="pared3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4728.58, 526.531 )
+position = Vector2( 4737.21, 530.848 )
 scale = Vector2( 0.714437, 0.816655 )
 
 [node name="pared2" parent="." instance=ExtResource( 6 )]
@@ -41,6 +46,3 @@ position = Vector2( 3224.59, 583.883 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3517.58, 580.956 )
-
-[node name="curculo_fuego" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4089.24, 357.161 )
