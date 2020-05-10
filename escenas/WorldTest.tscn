@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/enemigos/intanciar-enemigos/instancia-enemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
-[ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.tscn" type="PackedScene" id=4]
-[ext_resource path="res://escenas/enemigos/cono_enemigo/ConoEnemigo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://escenas/enemigos/pared_enemigo/ParedEnemigo.tscn" type="PackedScene" id=6]
 
 [node name="WorldTest" type="Node2D"]
 
@@ -15,30 +12,5 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
-[node name="CirculoFuego" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2081.71, 254.521 )
-scale = Vector2( 0.720968, 0.922322 )
-
-[node name="CirculoFuego2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4209.97, 251.719 )
-scale = Vector2( 0.720968, 0.922322 )
-
-[node name="pared" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1682.45, 481.12 )
-scale = Vector2( 0.714437, 0.816655 )
-
-[node name="pared3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4737.21, 530.848 )
-scale = Vector2( 0.714437, 0.816655 )
-
-[node name="pared2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2760.36, 537.544 )
-
-[node name="Sprite2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3224.59, 583.883 )
-
-[node name="Sprite3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3517.58, 580.956 )
-
-[node name="Position2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1009.03, 536.32 )
+[node name="GeneradorCono" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1413.38, 541.312 )

@@ -9,4 +9,3 @@ script = ExtResource( 1 )
 position = Vector2( 2.18469, 2.38328 )
 scale = Vector2( 5.58783, 2.86691 )
 [connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
-[connection signal="viewport_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_viewport_entered"]
