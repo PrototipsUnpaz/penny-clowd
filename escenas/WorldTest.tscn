@@ -14,3 +14,7 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
 position = Vector2( 392, 576 )
+
+[node name="GeneradorEnemigos2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1192, 560 )
+obstaculo = "pared"
