@@ -4,7 +4,7 @@ const speed = 200
 var velocity = Vector2()
 
 func _physics_process(delta):
-	print(global_position.y)
+
 	if global_position.y < 570:
 		velocity.y += 10
 	if global_position. y >=570:
