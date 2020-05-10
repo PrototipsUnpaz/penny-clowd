@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://escenas/suelo/SueloColision.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/intanciar-enemigos/instancia-enemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/enemigos/cono_enemigo/ConoEnemigo.tscn" type="PackedScene" id=5]
@@ -9,50 +10,23 @@
 [ext_resource path="res://escenas/items/Item.tscn" type="PackedScene" id=7]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 
+
 [node name="WorldTest" type="Node2D"]
 script = ExtResource( 8 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 52.2054, 570.287 )
+position = Vector2( 65.9936, 519.585 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
-[node name="SueloColision" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5299.09, 621.418 )
+[node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
+position = Vector2( 392, 576 )
 
-[node name="CirculoFuego" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2060.13, 344.533 )
-scale = Vector2( 0.720968, 0.922322 )
+[node name="GeneradorEnemigos2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1192, 560 )
+obstaculo = "pared"
 
-[node name="Sprite" parent="." instance=ExtResource( 5 )]
-position = Vector2( 510.217, 582.005 )
-
-[node name="pared" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1320.05, 522.358 )
-scale = Vector2( 0.714437, 0.816655 )
-
-[node name="pared3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4728.58, 526.531 )
-scale = Vector2( 0.714437, 0.816655 )
-
-[node name="pared2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2760.36, 537.544 )
-
-[node name="Sprite2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3224.59, 583.883 )
-
-[node name="Sprite3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3517.58, 580.956 )
-
-[node name="curculo_fuego" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4089.24, 357.161 )
-
-[node name="item" parent="." instance=ExtResource( 7 )]
-position = Vector2( 265.471, 522.151 )
-
-[node name="item2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2057, 396.96 )
-
-[node name="item3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 843.88, 515.119 )
+[node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2112, 328 )
+obstaculo = "circulo"

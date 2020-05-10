@@ -4,17 +4,24 @@
 [ext_resource path="res://escenas/enemigos/pared_enemigo/ParedEnemigo.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 33.9737, 117.054 )
+extents = Vector2( 34.0897, 114.919 )
 
 [node name="pared" type="Sprite"]
-position = Vector2( -4.03915, -18.8648 )
-scale = Vector2( 0.819819, 0.765975 )
+position = Vector2( -10.8981, -18.8648 )
+scale = Vector2( 0.65651, 0.765975 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0.773804, 0 )
+position = Vector2( -0.532158, 0 )
 shape = SubResource( 1 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( 1.52321, -0.652769 )
+scale = Vector2( 3.43713, 12.1622 )
+process_parent = true
+physics_process_parent = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="screen_entered" from="VisibilityEnabler2D" to="." method="_on_VisibilityEnabler2D_screen_entered"]
