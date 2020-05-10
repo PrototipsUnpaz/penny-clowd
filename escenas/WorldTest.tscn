@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/suelo/SueloColision.tscn" type="PackedScene" id=2]
@@ -6,8 +6,11 @@
 [ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/enemigos/cono_enemigo/ConoEnemigo.tscn" type="PackedScene" id=5]
 [ext_resource path="res://escenas/enemigos/pared_enemigo/ParedEnemigo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://escenas/items/Item.tscn" type="PackedScene" id=7]
+[ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 
 [node name="WorldTest" type="Node2D"]
+script = ExtResource( 8 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 52.2054, 570.287 )
@@ -44,3 +47,12 @@ position = Vector2( 3517.58, 580.956 )
 
 [node name="curculo_fuego" parent="." instance=ExtResource( 4 )]
 position = Vector2( 4089.24, 357.161 )
+
+[node name="item" parent="." instance=ExtResource( 7 )]
+position = Vector2( 265.471, 522.151 )
+
+[node name="item2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2057, 396.96 )
+
+[node name="item3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 843.88, 515.119 )
