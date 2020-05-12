@@ -3,6 +3,9 @@ extends Control
 
 func _ready():
 	$TextoVida.text = "x " + String(Vidas.vidasNivel)
+	pass
+	
+func _process(delta):
 	$TextoItem.text = "x " + String(Vidas.items)
 	pass
 
