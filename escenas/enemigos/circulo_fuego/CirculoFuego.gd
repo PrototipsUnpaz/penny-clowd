@@ -10,7 +10,7 @@ func _physics_process(delta):
 
 func _on_Area2D_area_entered(area):
 	queue_free()
-	get_tree().change_scene("res://escenas/pantalla negra/PantallaNegra.tscn")
+	get_tree().change_scene("res://escenas/pantalla_negra/PantallaNegra.tscn")
 	pass
 
 

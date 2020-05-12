@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready():
 	$Timer.start()
+	$Label.text = "X " + String(Vidas.vidasNivel)
 	pass
 
 func volver_a_iniciar():

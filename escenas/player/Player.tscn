@@ -15,6 +15,7 @@
 [ext_resource path="res://assets/personaje/salto/salto4ver2.png" type="Texture" id=18]
 [ext_resource path="res://assets/personaje/salto/salto5ver2.png" type="Texture" id=19]
 
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 124.016, 260.492 )
 

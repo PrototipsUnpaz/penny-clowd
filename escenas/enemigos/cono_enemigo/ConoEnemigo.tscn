@@ -3,6 +3,9 @@
 [ext_resource path="res://assets/enemigos/cono/cono.png" type="Texture" id=1]
 [ext_resource path="res://escenas/enemigos/cono_enemigo/ConoEnemigo.gd" type="Script" id=2]
 
+
+
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 18.3968, 98.6203 )
 

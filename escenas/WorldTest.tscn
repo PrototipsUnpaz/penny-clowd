@@ -1,17 +1,14 @@
-
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://escenas/intanciar-enemigos/instancia-enemigos.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
-[ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.tscn" type="PackedScene" id=4]
-[ext_resource path="res://escenas/enemigos/cono_enemigo/ConoEnemigo.tscn" type="PackedScene" id=5]
-[ext_resource path="res://escenas/enemigos/pared_enemigo/ParedEnemigo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://escenas/items/Item.tscn" type="PackedScene" id=7]
+[ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 
-
-[node name="WorldTest" type="Node2D"]
+[node name="WorldTest" type="Node2D" groups=[
+"UI",
+]]
 script = ExtResource( 8 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
@@ -30,3 +27,23 @@ obstaculo = "pared"
 [node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2112, 328 )
 obstaculo = "circulo"
+
+[node name="UIVidas" parent="." instance=ExtResource( 4 )]
+anchor_bottom = 0.0
+margin_left = 3.6131
+margin_top = 1.30658
+margin_right = 503.613
+margin_bottom = 201.307
+rect_scale = Vector2( 0.3, 0.3 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextoVidas" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 81.8038
+margin_top = 11.9649
+margin_right = 152.804
+margin_bottom = 64.9649
+__meta__ = {
+"_edit_use_anchors_": true
+}
