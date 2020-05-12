@@ -24,7 +24,6 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
-	Vidas.vidasNivel -= 1
 	#get_tree().call_group("UI","borrarUltimaVida")
 	#función lista por si el cliente cambia 
 	#de opinión sobre la UI. a terminar/consultar

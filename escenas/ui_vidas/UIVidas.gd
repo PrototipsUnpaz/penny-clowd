@@ -1,9 +1,12 @@
 extends Control
 
-#onready var vidas = $HBoxContainer
 
 func _ready():
-	$HBoxContainer/TextoVida.text = "X " + String(Vidas.vidasNivel)
+	$TextoVida.text = "x " + String(Vidas.vidasNivel)
+	pass
+	
+func _process(delta):
+	$TextoItem.text = "x " + String(Vidas.items)
 	pass
 
 #func borrarUltimaVida():
