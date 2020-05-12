@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="PennytheClowd"
 run/main_scene="res://escenas/WorldTest.tscn"
 
+[autoload]
+
+Vidas="*res://scripts/VidasGlobal.gd"
+
 [display]
 
 window/size/width=1080

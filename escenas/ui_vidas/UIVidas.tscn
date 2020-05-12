@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://escenas/ui_vidas/UIVidas.gd" type="Script" id=2]
+[ext_resource path="res://escenas/ui_vidas/HBoxContainer.gd" type="Script" id=3]
+[ext_resource path="res://escenas/ui_vidas/VidaIndividual.tscn" type="PackedScene" id=4]
+
+[node name="UIVidas" type="Control" groups=[
+"UI",
+]]
+margin_right = 500.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 500, 200 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." groups=[
+"UI",
+]]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -200.0
+margin_right = 200.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 400, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_constants/separation = 30
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VidaIndividual" parent="HBoxContainer" groups=[
+"UI",
+] instance=ExtResource( 4 )]
+margin_top = 98.0
+margin_bottom = 148.0
+color = Color( 0.2, 0.219608, 0.278431, 1 )
+
+[node name="TextoVida" type="Label" parent="HBoxContainer" groups=[
+"UI",
+]]
+margin_left = 80.0
+margin_top = 98.0
+margin_right = 180.0
+margin_bottom = 148.0
+rect_min_size = Vector2( 100, 50 )

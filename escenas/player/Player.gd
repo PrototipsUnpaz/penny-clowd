@@ -21,10 +21,12 @@ func _physics_process(delta):
 		velocity.y = -1000
 		$AnimatedSprite.play("SALTO")
 	move_and_slide(velocity,Vector2(1000,0))
-	
 	pass
 
-	
 func _on_Area2D_area_entered(area):
+	Vidas.vidasNivel -= 1
+	#get_tree().call_group("UI","borrarUltimaVida")
+	#función lista por si el cliente cambia 
+	#de opinión sobre la UI. a terminar/consultar
 	pass
 	
