@@ -12,13 +12,6 @@
 ]]
 script = ExtResource( 8 )
 
-[node name="UIVidas" parent="." instance=ExtResource( 4 )]
-margin_right = 500.0
-margin_bottom = 200.0
-rect_scale = Vector2( 0.3, 0.3 )
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 65.9936, 519.585 )
 scale = Vector2( 0.2, 0.2 )
@@ -44,3 +37,12 @@ position = Vector2( 2087.91, 301.348 )
 
 [node name="Item3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1607.19, 540.513 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="UIVidas" parent="UI" instance=ExtResource( 4 )]
+margin_right = 500.0
+margin_bottom = 200.0
+rect_scale = Vector2( 0.3, 0.3 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
