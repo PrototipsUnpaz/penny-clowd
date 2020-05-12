@@ -1,14 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://escenas/ui_vidas/VidaIndividual.gd" type="Script" id=1]
+[ext_resource path="res://assets/vida.png" type="Texture" id=2]
 
-[node name="VidaIndividual" type="ColorRect"]
-margin_right = 50.0
-margin_bottom = 50.0
+[node name="VidaIndividual" type="TextureRect"]
+margin_right = 320.0
+margin_bottom = 240.0
 rect_min_size = Vector2( 50, 50 )
+rect_scale = Vector2( 0.5, 0.5 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
-color = Color( 0.2, 0.219608, 0.278431, 1 )
+texture = ExtResource( 2 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

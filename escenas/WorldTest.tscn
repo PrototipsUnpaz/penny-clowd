@@ -29,12 +29,21 @@ position = Vector2( 2112, 328 )
 obstaculo = "circulo"
 
 [node name="UIVidas" parent="." instance=ExtResource( 4 )]
+anchor_bottom = 0.0
+margin_left = 3.6131
+margin_top = 1.30658
+margin_right = 503.613
+margin_bottom = 201.307
+rect_scale = Vector2( 0.3, 0.3 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="TextoVidas" type="Label" parent="."]
-margin_left = 129.272
-margin_top = 22.5134
-margin_right = 200.272
-margin_bottom = 75.5134
+anchor_right = 1.0
+margin_left = 81.8038
+margin_top = 11.9649
+margin_right = 152.804
+margin_bottom = 64.9649
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
