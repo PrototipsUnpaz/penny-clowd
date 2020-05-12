@@ -12,3 +12,7 @@ func sumar_vida():
 func quitar_vida():
 	vidasNivel -=1
 	pass
+	
+func suma_items():
+	items +=1
+	pass
