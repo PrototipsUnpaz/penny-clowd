@@ -3,6 +3,7 @@ extends Node2D
 func _ready():
 	$Timer.start()
 	$Control/Label.text = "X " + String(Vidas.vidasNivel)
+	$SonidoColision.play()
 	pass
 
 func volver_a_iniciar():
