@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/items/Item.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sonido/nivel_1.ogg" type="AudioStream" id=6]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 
 [node name="WorldTest" type="Node2D" groups=[
@@ -21,12 +22,26 @@ scale = Vector2( 0.2, 0.2 )
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
 position = Vector2( 392, 576 )
 
+[node name="GeneradorEnemigos4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2593, 576 )
+
+[node name="GeneradorEnemigos5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2879, 576 )
+
 [node name="GeneradorEnemigos2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1192, 560 )
 obstaculo = "pared"
 
+[node name="GeneradorEnemigos7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3609.28, 560 )
+obstaculo = "pared"
+
 [node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2112, 328 )
+obstaculo = "circulo"
+
+[node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4490.95, 328 )
 obstaculo = "circulo"
 
 [node name="Item" parent="." instance=ExtResource( 5 )]
@@ -46,3 +61,7 @@ margin_bottom = 200.0
 rect_scale = Vector2( 0.3, 0.3 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
+
+[node name="Sountrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true

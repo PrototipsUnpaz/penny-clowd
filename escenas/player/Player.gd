@@ -20,12 +20,16 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("Touch") and global_position. y ==570:
 		velocity.y = -1000
 		$AnimatedSprite.play("SALTO")
+		$SonidoSalto.play()
 	move_and_slide(velocity,Vector2(1000,0))
 	pass
 
 func _on_Area2D_area_entered(area):
-	#get_tree().call_group("UI","borrarUltimaVida")
-	#función lista por si el cliente cambia 
-	#de opinión sobre la UI. a terminar/consultar
-	pass
+	if Vidas.items == 3:
+		$SonidoVidaObtenida.play()
+		pass
 	
+func _sonido_vida_obtenida():
+	if Vidas.items == 3:
+		$SonidoVidaObtenida.play()
+		pass
