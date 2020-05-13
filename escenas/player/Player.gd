@@ -25,7 +25,7 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
-	if Vidas.items == 3:
+	if Vidas.items == 3 :
 		$SonidoVidaObtenida.play()
 		pass
 	
