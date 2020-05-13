@@ -25,10 +25,9 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
-	#get_tree().call_group("UI","borrarUltimaVida")
-	#función lista por si el cliente cambia 
-	#de opinión sobre la UI. a terminar/consultar
-	pass
+	if Vidas.items == 3:
+		$SonidoVidaObtenida.play()
+		pass
 	
 func _sonido_vida_obtenida():
 	if Vidas.items == 3:
