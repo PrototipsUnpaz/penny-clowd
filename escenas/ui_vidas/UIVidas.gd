@@ -2,24 +2,32 @@ extends Control
 
 
 func _ready():
-	$TextoVida.text = "x " + String(Vidas.vidasNivel)
+	$LoveContainer/Love.modulate = Color(1,1,1,0.5)
+	$LikeContainer/Like.modulate = Color(1,1,1,0.5)
+	$SonrisaContainer/Sonrisa.modulate = Color(1,1,1,0.5)
 	pass
 	
 func _process(delta):
-	vida_extra()
 	#$TextoVida.text = "x " + String(Vidas.vidasNivel)
-	$TextoItem.text = "x " + String(Vidas.items)
+	cambiar_aspecto_item_love()
+	cambiar_aspecto_item_like()
+	cambiar_aspecto_item_smile()
 	pass
-
-func vida_extra():
-	if Vidas.items == 3 :
-		$TextoVida.text = "x " + String(Vidas.vidasNivel)
+		
+		
+func cambiar_aspecto_item_love():
+	if Vidas.itemLove == true:
+		$LoveContainer/Love.modulate = Color(1,1,1,1)
 		pass
-#func borrarUltimaVida():
-#	var contarVidas = vidas.get_child_count()
-#	$HBoxContainer.get_child(contarVidas - 1).queue_free()
-#	pass
-#función lista por si el cliente cambia 
-#de opinión sobre la UI. a terminar/consultar
+		
+func cambiar_aspecto_item_like():
+	if Vidas.itemLike == true :
+		$LikeContainer/Like.modulate = Color(1,1,1,1)
+		pass
+		
+func cambiar_aspecto_item_smile():
+	if Vidas.itemSmile == true :
+		$SonrisaContainer/Sonrisa.modulate = Color(1,1,1,1)
+		pass
 
 
