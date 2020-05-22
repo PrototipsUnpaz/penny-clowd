@@ -7,7 +7,6 @@ func _ready():
 	pass
 
 func volver_a_iniciar():
-	Vidas.items =0
 	get_tree().change_scene("res://escenas/WorldTest.tscn")
 	pass
 
