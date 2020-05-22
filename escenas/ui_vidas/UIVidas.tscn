@@ -2,10 +2,10 @@
 
 [ext_resource path="res://assets/Unicorn Pop.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.gd" type="Script" id=2]
+[ext_resource path="res://assets/items/smile.png" type="Texture" id=3]
 [ext_resource path="res://escenas/ui_vidas/VidaIndividual.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/items/sonrisa.png" type="Texture" id=5]
-[ext_resource path="res://assets/items/like_uno.png" type="Texture" id=6]
-[ext_resource path="res://assets/items/love_uno.png" type="Texture" id=7]
+[ext_resource path="res://assets/items/heart.png" type="Texture" id=5]
+[ext_resource path="res://assets/items/like.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 95
@@ -43,8 +43,7 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="." groups=[
 "UI",
 ]]
-margin_left = -15.4543
-margin_right = 1064.55
+margin_right = 1080.0
 margin_bottom = 240.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 4
@@ -63,8 +62,8 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 
 [node name="LoveContainer" type="HBoxContainer" parent="."]
-margin_left = 774.0
-margin_right = 1094.0
+margin_left = 735.0
+margin_right = 1059.0
 margin_bottom = 240.0
 rect_scale = Vector2( 0.9, 0.9 )
 alignment = 1
@@ -73,29 +72,31 @@ __meta__ = {
 }
 
 [node name="Love" type="TextureRect" parent="LoveContainer"]
-margin_right = 320.0
+margin_left = 2.0
+margin_right = 322.0
 margin_bottom = 240.0
-texture = ExtResource( 7 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="SonrisaContainer" type="HBoxContainer" parent="."]
-margin_left = 359.0
-margin_right = 679.0
-margin_bottom = 268.0
+margin_left = 404.0
+margin_right = 776.0
+margin_bottom = 240.0
+rect_scale = Vector2( 0.9, 0.9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sonrisa" type="TextureRect" parent="SonrisaContainer"]
 margin_right = 320.0
-margin_bottom = 268.0
-texture = ExtResource( 5 )
+margin_bottom = 240.0
+texture = ExtResource( 3 )
 
 [node name="LikeContainer" type="HBoxContainer" parent="."]
-margin_left = 569.0
-margin_right = 889.0
+margin_left = 573.0
+margin_right = 893.0
 margin_bottom = 240.0
 rect_scale = Vector2( 0.9, 0.9 )
 __meta__ = {
