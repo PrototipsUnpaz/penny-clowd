@@ -3,6 +3,7 @@ extends KinematicBody2D
 const speed = 200
 var velocity = Vector2()
 
+
 func _physics_process(delta):
 
 	if global_position.y < 570:
@@ -25,11 +26,10 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
-	if Vidas.items == 3 :
-		$SonidoVidaObtenida.play()
-		pass
+	sonido_vida_extra()
+	pass
 	
-func _sonido_vida_obtenida():
-	if Vidas.items == 3:
+func sonido_vida_extra():
+	if Vidas.vidaExtra == true :
 		$SonidoVidaObtenida.play()
 		pass
