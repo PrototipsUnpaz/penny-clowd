@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
-[ext_resource path="res://escenas/items/Item.tscn" type="PackedScene" id=5]
+[ext_resource path="res://escenas/items/corazon/ItemLove.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/sonido/nivel_1.ogg" type="AudioStream" id=6]
+[ext_resource path="res://escenas/items/sonrisa/ItemSmile.tscn" type="PackedScene" id=7]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
+[ext_resource path="res://escenas/items/like/ItemLike.tscn" type="PackedScene" id=9]
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
@@ -15,7 +17,7 @@ script = ExtResource( 8 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 65.9936, 519.585 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
@@ -44,19 +46,18 @@ obstaculo = "circulo"
 position = Vector2( 4490.95, 328 )
 obstaculo = "circulo"
 
-[node name="Item" parent="." instance=ExtResource( 5 )]
-position = Vector2( 707.928, 514.205 )
+[node name="ItemLove" parent="." instance=ExtResource( 5 )]
+position = Vector2( 947.406, 494.148 )
 
-[node name="Item2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2087.91, 301.348 )
+[node name="ItemLike" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1571.18, 477.46 )
 
-[node name="Item3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1607.19, 540.513 )
+[node name="ItemSmile" parent="." instance=ExtResource( 7 )]
+position = Vector2( 644.016, 499.668 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="UIVidas" parent="UI" instance=ExtResource( 4 )]
-margin_right = 500.0
 margin_bottom = 200.0
 rect_scale = Vector2( 0.3, 0.3 )
 size_flags_horizontal = 4
