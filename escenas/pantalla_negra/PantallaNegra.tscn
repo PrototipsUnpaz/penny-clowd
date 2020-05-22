@@ -3,13 +3,11 @@
 [ext_resource path="res://assets/pantalla_negra.jpg" type="Texture" id=1]
 [ext_resource path="res://escenas/pantalla_negra/PantallaNegra.gd" type="Script" id=2]
 [ext_resource path="res://assets/items/vida.png" type="Texture" id=3]
-[ext_resource path="res://assets/Takeshi DEMO.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/Unicorn Pop.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/sonido/colision_obstaculo_opcion_2.wav" type="AudioStream" id=5]
 
-
-
 [sub_resource type="DynamicFont" id=1]
-size = 75
+size = 80
 outline_size = 5
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
