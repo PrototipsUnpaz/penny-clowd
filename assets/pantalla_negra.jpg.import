@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pantalla negra.jpg-c6949233551c850642a74fb0a55b01f9.stex"
+path="res://.import/pantalla_negra.jpg-687c236c441d84a38e056f5220e88248.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pantalla negra.jpg"
-dest_files=[ "res://.import/pantalla negra.jpg-c6949233551c850642a74fb0a55b01f9.stex" ]
+source_file="res://assets/pantalla_negra.jpg"
+dest_files=[ "res://.import/pantalla_negra.jpg-687c236c441d84a38e056f5220e88248.stex" ]
 
 [params]
 
