@@ -20,7 +20,7 @@ scale = Vector2( 0.2, 0.2 )
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
-position = Vector2( 392, 576 )
+position = Vector2( 536, 576 )
 
 [node name="GeneradorEnemigos4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2593, 576 )

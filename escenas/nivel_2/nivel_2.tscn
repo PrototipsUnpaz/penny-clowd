@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/enemigos/diabolo_m/diabolo_M.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/nivel_2/nivel_2.gd" type="Script" id=3]
 
 [node name="nivel_2" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Position2D" type="Position2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, 104 )
+position = Vector2( 40, 72 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
