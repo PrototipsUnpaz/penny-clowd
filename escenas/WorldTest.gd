@@ -1,7 +1,5 @@
 extends Node2D
 
-
-
 func _ready():
 	quitar_item_love()
 	quitar_item_like()
