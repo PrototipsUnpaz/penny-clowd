@@ -37,6 +37,6 @@ rotation = 1.48528
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 2 )
 animation = "diabolo_m"
-frame = 3
+frame = 2
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
