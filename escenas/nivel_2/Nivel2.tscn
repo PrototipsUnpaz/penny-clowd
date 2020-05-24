@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://escenas/enemigos/diabolo_m/diabolo_M.tscn" type="PackedScene" id=2]
-[ext_resource path="res://escenas/enemigos/diabolo_g/diabolo_g.tscn" type="PackedScene" id=4]
+[ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.tscn" type="PackedScene" id=3]
 
 [node name="nivel_2" type="Node2D"]
 
@@ -10,8 +10,8 @@
 position = Vector2( 40, 72 )
 scale = Vector2( 0.2, 0.2 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1464, 208 )
 
-[node name="KinematicBody2D2" parent="." instance=ExtResource( 4 )]
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 704, 240 )
