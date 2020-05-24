@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/enemigos/diabolo_g/coso2.png" type="Texture" id=1]
-[ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
+[ext_resource path="res://assets/enemigos/diabolo_g/coso_2.png" type="Texture" id=1]
+[ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 

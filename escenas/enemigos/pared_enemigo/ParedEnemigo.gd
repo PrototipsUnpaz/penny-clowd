@@ -9,5 +9,5 @@ func _on_Area2D_area_entered(area):
 
 
 func _on_VisibilityEnabler2D_screen_entered():
-	print("visuaizado pared")
+	print("visualizado pared")
 	pass 

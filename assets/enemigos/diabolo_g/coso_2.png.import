@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/salto4ver2.png-814c089b45f13bcbafa4bd2cb720fc7e.stex"
+path="res://.import/coso_2.png-dd066018c169a1392724d10de17e5b7c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/salto/salto4ver2.png"
-dest_files=[ "res://.import/salto4ver2.png-814c089b45f13bcbafa4bd2cb720fc7e.stex" ]
+source_file="res://assets/enemigos/diabolo_g/coso_2.png"
+dest_files=[ "res://.import/coso_2.png-dd066018c169a1392724d10de17e5b7c.stex" ]
 
 [params]
 

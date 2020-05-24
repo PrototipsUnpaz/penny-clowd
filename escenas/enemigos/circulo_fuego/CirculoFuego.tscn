@@ -2,7 +2,8 @@
 
 [ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.gd" type="Script" id=1]
 [ext_resource path="res://assets/enemigos/circulo_fuego/fuego.png" type="Texture" id=2]
-[ext_resource path="res://assets/enemigos/circulo_fuego/fuego2.png" type="Texture" id=3]
+[ext_resource path="res://assets/enemigos/circulo_fuego/fuego_2.png" type="Texture" id=3]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

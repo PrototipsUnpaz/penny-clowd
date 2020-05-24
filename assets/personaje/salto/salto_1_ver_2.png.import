@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/salto5ver2.png-89d2d4211b7876c4794829691f0ed37c.stex"
+path="res://.import/salto_1_ver_2.png-cb7c71428d97a7bec7c1458bbff34efb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/salto/salto5ver2.png"
-dest_files=[ "res://.import/salto5ver2.png-89d2d4211b7876c4794829691f0ed37c.stex" ]
+source_file="res://assets/personaje/salto/salto_1_ver_2.png"
+dest_files=[ "res://.import/salto_1_ver_2.png-cb7c71428d97a7bec7c1458bbff34efb.stex" ]
 
 [params]
 
