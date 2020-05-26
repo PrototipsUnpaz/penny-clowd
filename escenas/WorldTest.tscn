@@ -39,7 +39,7 @@ position = Vector2( 3609.28, 560 )
 obstaculo = "pared"
 
 [node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2112, 328 )
+position = Vector2( 2112, 352 )
 obstaculo = "circulo"
 
 [node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]

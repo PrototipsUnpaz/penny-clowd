@@ -1,9 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/fondo/fondomuestra.png" type="Texture" id=1]
-
-
-
+[ext_resource path="res://assets/fondo/fondo-pro.png" type="Texture" id=1]
 
 [node name="fondo-muestra" type="CanvasLayer"]
 

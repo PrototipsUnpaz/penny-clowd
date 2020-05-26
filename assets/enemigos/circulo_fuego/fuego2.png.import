@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fuego_2.png-9c1a535f31fe35147061889b7c43f633.stex"
+path="res://.import/fuego2.png-091b134267b541154b427dfd95798378.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemigos/circulo_fuego/fuego_2.png"
-dest_files=[ "res://.import/fuego_2.png-9c1a535f31fe35147061889b7c43f633.stex" ]
+source_file="res://assets/enemigos/circulo_fuego/fuego2.png"
+dest_files=[ "res://.import/fuego2.png-091b134267b541154b427dfd95798378.stex" ]
 
 [params]
 

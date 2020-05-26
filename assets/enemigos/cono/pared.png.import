@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fondomuestra.png-a6c6c5b505b44719e9cc5470c920a385.stex"
+path="res://.import/pared.png-df108b858e410c6364d11c91fe7cf1b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fondo/fondomuestra.png"
-dest_files=[ "res://.import/fondomuestra.png-a6c6c5b505b44719e9cc5470c920a385.stex" ]
+source_file="res://assets/enemigos/cono/pared.png"
+dest_files=[ "res://.import/pared.png-df108b858e410c6364d11c91fe7cf1b2.stex" ]
 
 [params]
 
