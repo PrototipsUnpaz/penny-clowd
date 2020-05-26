@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 [ext_resource path="res://escenas/items/like/ItemLike.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/fondo/fondomuestra.png" type="Texture" id=10]
+[ext_resource path="res://escenas/Escena1a2.tscn" type="PackedScene" id=11]
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
@@ -157,3 +158,6 @@ texture = ExtResource( 10 )
 [node name="Sprite11" type="Sprite" parent="."]
 position = Vector2( 4868.65, 1086.56 )
 texture = ExtResource( 10 )
+
+[node name="Node2D" parent="." instance=ExtResource( 11 )]
+position = Vector2( 12981.7, 444.301 )
