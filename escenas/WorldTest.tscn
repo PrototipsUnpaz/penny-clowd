@@ -2,7 +2,7 @@
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
-[ext_resource path="res://escenas/fondo/FondoMuestra.tscn" type="PackedScene" id=3]
+[ext_resource path="res://escenas/fondos/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/items/corazon/ItemLove.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/sonido/nivel_1.ogg" type="AudioStream" id=6]
@@ -87,8 +87,7 @@ obstaculo = "pared"
 position = Vector2( 11409.8, 599.286 )
 
 [node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3971.55, 323.635 )
-obstaculo = "circulo"
+position = Vector2( 2112, 352 )
 
 [node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 8096.56, 328 )
