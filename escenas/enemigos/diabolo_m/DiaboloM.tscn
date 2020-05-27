@@ -23,6 +23,7 @@ script = ExtResource( 2 )
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -1.90735e-06, 0 )
 scale = Vector2( 0.2, 0.2 )
+collision_layer = 4
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2( 0.2, 0.2 )
@@ -39,6 +40,5 @@ position = Vector2( 7.43295, -7.433 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
 animation = "animacion"
-frame = 2
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
