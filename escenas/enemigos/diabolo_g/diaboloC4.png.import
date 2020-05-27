@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coso_2.png-dd066018c169a1392724d10de17e5b7c.stex"
+path="res://.import/diaboloC4.png-55551a33e44a689400799c08a6a1a429.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemigos/diabolo_g/coso_2.png"
-dest_files=[ "res://.import/coso_2.png-dd066018c169a1392724d10de17e5b7c.stex" ]
+source_file="res://escenas/enemigos/diabolo_g/diaboloC4.png"
+dest_files=[ "res://.import/diaboloC4.png-55551a33e44a689400799c08a6a1a429.stex" ]
 
 [params]
 

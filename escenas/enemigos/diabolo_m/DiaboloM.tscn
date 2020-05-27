@@ -1,17 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/enemigos/diabolo_m/coso.png" type="Texture" id=1]
+[ext_resource path="res://assets/enemigos/diabolo_m/diaboloM2.png" type="Texture" id=1]
 [ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.gd" type="Script" id=2]
+[ext_resource path="res://assets/enemigos/diabolo_m/diaboloM1.png" type="Texture" id=3]
+[ext_resource path="res://assets/enemigos/diabolo_m/diaboloM3.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4000.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "diabolo_m",
-"speed": 5.0
+"name": "animacion",
+"speed": 7.5
 } ]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -33,10 +35,10 @@ shape = SubResource( 1 )
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-rotation = 1.48528
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 7.43295, -7.433 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
-animation = "diabolo_m"
+animation = "animacion"
 frame = 2
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
