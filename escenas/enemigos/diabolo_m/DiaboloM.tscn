@@ -36,8 +36,9 @@ one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 7.43295, -7.433 )
-scale = Vector2( 2.72281, 2.66087 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
 animation = "animacion"
+frame = 2
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

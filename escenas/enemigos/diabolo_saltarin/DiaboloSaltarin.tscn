@@ -7,10 +7,10 @@
 [ext_resource path="res://assets/enemigos/diabolo_saltarin/diaboloC3.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 28.8118, 18.992 )
+extents = Vector2( 15.5708, 12.3715 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 24.352, 20.4786 )
+extents = Vector2( 10.8533, 14.9246 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -32,7 +32,7 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -2.22986, -5.72205e-06 )
+position = Vector2( -0.107965, -0.606264 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 3 )
 animation = "animacion"
