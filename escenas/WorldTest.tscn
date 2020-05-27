@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
@@ -9,11 +9,16 @@
 [ext_resource path="res://escenas/items/sonrisa/ItemSmile.tscn" type="PackedScene" id=7]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 [ext_resource path="res://escenas/items/like/ItemLike.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/fondo/fondomuestra.png" type="Texture" id=10]
+[ext_resource path="res://escenas/Escena1a2.tscn" type="PackedScene" id=11]
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
 ]]
 script = ExtResource( 8 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 65.9936, 519.585 )
@@ -22,38 +27,85 @@ scale = Vector2( 0.25, 0.25 )
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
-position = Vector2( 536, 576 )
+position = Vector2( 866.135, 596.314 )
 
 [node name="GeneradorEnemigos4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2593, 576 )
+position = Vector2( 2152.12, 597.826 )
 
 [node name="GeneradorEnemigos5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2879, 576 )
+position = Vector2( 2739.32, 602.191 )
+obstaculo = "pared"
 
 [node name="GeneradorEnemigos2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1192, 560 )
-obstaculo = "pared"
+position = Vector2( 1598.19, 599.159 )
 
 [node name="GeneradorEnemigos7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3609.28, 560 )
+position = Vector2( 3347.37, 603.651 )
+
+[node name="GeneradorEnemigos9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4626.36, 603.651 )
+
+[node name="GeneradorEnemigos10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5080.33, 603.651 )
+
+[node name="GeneradorEnemigos11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5922.8, 599.286 )
 obstaculo = "pared"
 
+[node name="GeneradorEnemigos12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6455.35, 603.651 )
+
+[node name="GeneradorEnemigos13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6987.9, 599.286 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7537.91, 599.286 )
+
+[node name="GeneradorEnemigos15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8773.24, 599.286 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9777.22, 599.286 )
+
+[node name="GeneradorEnemigos17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9558.96, 599.286 )
+
+[node name="GeneradorEnemigos18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10562.9, 599.286 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11191.5, 599.286 )
+
+[node name="GeneradorEnemigos20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11846.3, 599.286 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11409.8, 599.286 )
+
 [node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2112, 328 )
+position = Vector2( 3971.55, 323.635 )
 obstaculo = "circulo"
 
 [node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4490.95, 328 )
+position = Vector2( 8096.56, 328 )
+obstaculo = "circulo"
+
+[node name="GeneradorEnemigos8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12413.7, 323.635 )
 obstaculo = "circulo"
 
 [node name="ItemLove" parent="." instance=ExtResource( 5 )]
-position = Vector2( 947.406, 494.148 )
+position = Vector2( 12316.5, 327.494 )
 
 [node name="ItemLike" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1571.18, 477.46 )
+position = Vector2( 8001.07, 332.72 )
 
 [node name="ItemSmile" parent="." instance=ExtResource( 7 )]
-position = Vector2( 644.016, 499.668 )
+position = Vector2( 2734.76, 329.466 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -66,3 +118,46 @@ size_flags_vertical = 4
 [node name="Sountrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 autoplay = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2709.29, 1090.34 )
+texture = ExtResource( 10 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 3792.07, 1092.4 )
+texture = ExtResource( 10 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 10278.9, 1121.27 )
+texture = ExtResource( 10 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 12416.4, 1097.63 )
+texture = ExtResource( 10 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 11346.9, 1105.54 )
+texture = ExtResource( 10 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 9185.13, 1095.4 )
+texture = ExtResource( 10 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 8103.1, 1091.81 )
+texture = ExtResource( 10 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 7026.74, 1090.23 )
+texture = ExtResource( 10 )
+
+[node name="Sprite10" type="Sprite" parent="."]
+position = Vector2( 5943.6, 1083.38 )
+texture = ExtResource( 10 )
+
+[node name="Sprite11" type="Sprite" parent="."]
+position = Vector2( 4868.65, 1086.56 )
+texture = ExtResource( 10 )
+
+[node name="Node2D" parent="." instance=ExtResource( 11 )]
+position = Vector2( 12981.7, 444.301 )
