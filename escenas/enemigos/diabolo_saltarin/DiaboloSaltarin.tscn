@@ -21,6 +21,7 @@ animations = [ {
 } ]
 
 [node name="Node2D" type="KinematicBody2D"]
+collision_layer = 8
 script = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -36,9 +37,10 @@ position = Vector2( -0.107965, -0.606264 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 3 )
 animation = "animacion"
+frame = 3
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 1.5
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

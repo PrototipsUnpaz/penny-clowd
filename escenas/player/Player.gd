@@ -5,24 +5,38 @@ var velocity = Vector2()
 
 
 func _physics_process(delta):
-
-	if global_position.y < 570:
-		velocity.y += 10
-	if global_position. y >=570:
-		position. y =570
-		velocity. y = 0
-	velocity.y +=20
-	velocity.x = speed
-	#move_and_slide(velocity,Vector2(0,-1))
-	#if is_on_floor():
-	if global_position. y ==570:
-		$AnimatedSprite.play("Correr")
-		velocity.y = 0
-	if Input.is_action_just_pressed("Touch") and global_position. y ==570:
-		velocity.y = -1000
-		$AnimatedSprite.play("SALTO")
-		$SonidoSalto.play()
-	move_and_slide(velocity,Vector2(1000,0))
+	if Vidas.posPenny2 == false :
+		if global_position.y < 570:
+			velocity.y += 10
+		if global_position. y >=570:
+			position. y =570
+			velocity. y = 0
+		velocity.y +=20
+		velocity.x = speed
+		if global_position. y ==570:
+			$AnimatedSprite.play("Correr")
+			velocity.y = 0
+		if Input.is_action_just_pressed("Touch") and global_position. y ==570:
+			velocity.y = -1000
+			$AnimatedSprite.play("SALTO")
+			$SonidoSalto.play()
+		move_and_slide(velocity,Vector2(1000,0))
+	else:
+		if global_position.y < 310:
+			velocity.y += 10
+		if global_position. y >=310:
+			position. y =310
+			velocity. y = 0
+		velocity.y +=20
+		velocity.x = speed
+		if global_position. y ==310:
+			$AnimatedSprite.play("Correr")
+			velocity.y = 0
+		if Input.is_action_just_pressed("Touch") and global_position. y ==310:
+			velocity.y = -1000
+			$AnimatedSprite.play("SALTO")
+			$SonidoSalto.play()
+		move_and_slide(velocity,Vector2(1000,0))
 	pass
 
 func _on_Area2D_area_entered(area):
