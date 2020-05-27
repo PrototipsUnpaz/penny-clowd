@@ -9,14 +9,14 @@
 [sub_resource type="CircleShape2D" id=1]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 48.0
+radius = 45.6687
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "animacion",
-"speed": 5.0
+"speed": 2.5
 } ]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -31,11 +31,11 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -15.4849, -2.97786 )
-scale = Vector2( 0.542974, 0.493921 )
+position = Vector2( 0.0501099, -0.153351 )
+scale = Vector2( 0.45, 0.45 )
 frames = SubResource( 3 )
 animation = "animacion"
-frame = 2
+frame = 1
 speed_scale = 2.0
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

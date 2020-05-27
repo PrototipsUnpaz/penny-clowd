@@ -13,7 +13,7 @@ animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "animacion",
-"speed": 5.0
+"speed": 7.5
 } ]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -35,10 +35,9 @@ shape = SubResource( 1 )
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -37.1651, -18.5825 )
-scale = Vector2( 2.34723, 2.33175 )
+position = Vector2( 7.43295, -7.433 )
+scale = Vector2( 2.72281, 2.66087 )
 frames = SubResource( 2 )
 animation = "animacion"
-frame = 2
 playing = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
