@@ -8,8 +8,9 @@
 scroll_ignore_camera_zoom = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
-motion_mirroring = Vector2( 1080, 0 )
+motion_mirroring = Vector2( 1280, 0 )
 
 [node name="Sprite" type="Sprite" parent="Background/ParallaxLayer"]
-position = Vector2( 537.243, 360.896 )
+position = Vector2( 638.621, 360.896 )
+scale = Vector2( 1.18774, 1 )
 texture = ExtResource( 1 )
