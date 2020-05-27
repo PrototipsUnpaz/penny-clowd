@@ -22,3 +22,4 @@ func _on_VisibilityNotifier2D_screen_entered():
 		add_child(instacialove)
 	pass 
 
+

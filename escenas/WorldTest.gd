@@ -12,17 +12,17 @@ func _process(delta):
 
 func quitar_item_love():
 	if Vidas.quitarItemLove == true :
-		$ItemLove.queue_free()
+		$instancia_items3.queue_free()
 		pass
 		
 func quitar_item_sonrisa():
 	if Vidas.quitarItemSmile == true :
-		$ItemSmile.queue_free()
+		$instancia_items.queue_free()
 		pass
 		
 func quitar_item_like():
 	if Vidas.quitarItemLike == true :
-		$ItemLike.queue_free()
+		$instancia_items2.queue_free()
 		pass
 		
 

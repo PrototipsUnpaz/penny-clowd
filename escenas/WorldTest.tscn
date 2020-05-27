@@ -1,14 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/fondos/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
-[ext_resource path="res://escenas/items/corazon/ItemLove.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/sonido/nivel_1.ogg" type="AudioStream" id=6]
-[ext_resource path="res://escenas/items/sonrisa/ItemSmile.tscn" type="PackedScene" id=7]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
-[ext_resource path="res://escenas/items/like/ItemLike.tscn" type="PackedScene" id=9]
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
 [ext_resource path="res://escenas/Escena1a2.tscn" type="PackedScene" id=11]
 
@@ -43,7 +40,7 @@ position = Vector2( 1598.19, 599.159 )
 position = Vector2( 3347.37, 603.651 )
 
 [node name="GeneradorEnemigos22" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4058.25, 328.74 )
+position = Vector2( 4066, 378 )
 obstaculo = "circulo"
 
 [node name="GeneradorEnemigos9" parent="." instance=ExtResource( 2 )]
@@ -91,21 +88,12 @@ obstaculo = "pared"
 position = Vector2( 11409.8, 599.286 )
 
 [node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8096.56, 328 )
+position = Vector2( 8106.56, 378 )
 obstaculo = "circulo"
 
 [node name="GeneradorEnemigos8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12413.7, 323.635 )
+position = Vector2( 12423.7, 373.635 )
 obstaculo = "circulo"
-
-[node name="ItemLove" parent="." instance=ExtResource( 5 )]
-position = Vector2( 12392.2, 293.856 )
-
-[node name="ItemLike" parent="." instance=ExtResource( 9 )]
-position = Vector2( 8068.35, 307.492 )
-
-[node name="ItemSmile" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2734.76, 329.466 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -123,4 +111,12 @@ autoplay = true
 position = Vector2( 12981.7, 444.301 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
-position = Vector2( 632, 504 )
+position = Vector2( 2728, 328 )
+obstaculo = "smite"
+
+[node name="instancia_items2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 8082, 362 )
+
+[node name="instancia_items3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 12418, 354 )
+obstaculo = "love"
