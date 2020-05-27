@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://escenas/items/sonrisa/ItemSmile.tscn" type="PackedScene" id=7]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 [ext_resource path="res://escenas/items/like/ItemLike.tscn" type="PackedScene" id=9]
+[ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
 [ext_resource path="res://escenas/Escena1a2.tscn" type="PackedScene" id=11]
 
 [node name="WorldTest" type="Node2D" groups=[
@@ -120,3 +121,6 @@ autoplay = true
 
 [node name="Node2D" parent="." instance=ExtResource( 11 )]
 position = Vector2( 12981.7, 444.301 )
+
+[node name="instancia_items" parent="." instance=ExtResource( 10 )]
+position = Vector2( 632, 504 )
