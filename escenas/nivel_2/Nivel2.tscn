@@ -1,24 +1,36 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.tscn" type="PackedScene" id=2]
 [ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/enemigos/diabolo_saltarin/DiaboloSaltarin.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/fondos/fondo-nivel-2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://escenas/nivel_2/Nivel2.gd" type="Script" id=6]
+[ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=7]
 
 [node name="nivel_2" type="Node2D"]
+script = ExtResource( 6 )
 
 [node name="fondo2" parent="." instance=ExtResource( 5 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40, 72 )
+position = Vector2( 56, 72 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+light_mask = 4
 position = Vector2( 1464, 208 )
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
+light_mask = 4
 position = Vector2( 704, 240 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
+light_mask = 4
 position = Vector2( 1800.27, 208.124 )
+
+[node name="Ui" type="CanvasLayer" parent="."]
+
+[node name="UIVidas" parent="Ui" instance=ExtResource( 7 )]
+margin_bottom = 200.0
+rect_scale = Vector2( 0.3, 0.3 )
