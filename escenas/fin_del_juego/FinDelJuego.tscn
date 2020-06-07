@@ -8,3 +8,52 @@
 position = Vector2( 647.536, 361.631 )
 scale = Vector2( 1.28333, 1.13737 )
 texture = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -3.99451
+margin_right = 1280.0
+margin_bottom = 716.006
+rect_min_size = Vector2( 1280, 720 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 143.605
+margin_top = 304.395
+margin_right = 739.605
+margin_bottom = 408.395
+rect_min_size = Vector2( 0, 104 )
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 29.9
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -425.0
+margin_top = 90.0
+margin_right = 425.0
+margin_bottom = 190.0
+rect_min_size = Vector2( 800, 100 )
+custom_constants/separation = 50
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "hola"
+}
+
+[node name="Button" type="Button" parent="Control/HBoxContainer"]
+margin_right = 400.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 400, 100 )
+
+[node name="Button2" type="Button" parent="Control/HBoxContainer"]
+margin_left = 450.0
+margin_right = 850.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 400, 100 )
