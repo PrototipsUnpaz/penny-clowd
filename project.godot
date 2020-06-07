@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="PennytheClowd"
-run/main_scene="res://escenas/WorldTest.tscn"
+run/main_scene="res://escenas/menu_principal/MenuPrincipal.tscn"
 
 [autoload]
 
