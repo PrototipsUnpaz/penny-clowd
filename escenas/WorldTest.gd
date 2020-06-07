@@ -4,6 +4,8 @@ func _ready():
 	quitar_item_love()
 	quitar_item_like()
 	quitar_item_sonrisa()
+	Vidas.nivelDos = false
+	Vidas.posPenny2 = false
 	pass
 	
 func _process(delta):
