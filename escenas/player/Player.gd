@@ -47,3 +47,5 @@ func sonido_vida_extra():
 	if Vidas.vidaExtra == true :
 		$SonidoVidaObtenida.play()
 		pass
+		
+		

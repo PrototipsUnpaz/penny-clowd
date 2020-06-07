@@ -14,6 +14,11 @@ var vidasNivel = 3
 var vidaExtra = false
 var items = 0
 
+
+#func juego_terminado():
+#		get_tree().change_scene("res://escenas/fin_del_juego/FinDelJuego.tscn")
+#		pass
+
 func sumar_vida():
 	if items == 3 :
 		vidasNivel +=1
@@ -27,3 +32,4 @@ func quitar_vida():
 func suma_items():
 	items +=1
 	pass
+
