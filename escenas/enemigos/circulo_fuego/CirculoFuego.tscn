@@ -16,8 +16,8 @@ animations = [ {
 extents = Vector2( 11.1234, 3.28184 )
 
 [node name="curculo_fuego" type="AnimatedSprite"]
-position = Vector2( 8, -80 )
-scale = Vector2( 0.785387, 0.785387 )
+position = Vector2( 8, -85.4075 )
+scale = Vector2( 0.785387, 1.20792 )
 frames = SubResource( 1 )
 script = ExtResource( 1 )
 
