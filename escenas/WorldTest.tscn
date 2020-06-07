@@ -107,7 +107,8 @@ size_flags_vertical = 4
 stream = ExtResource( 6 )
 autoplay = true
 
-[node name="Node2D" parent="." instance=ExtResource( 11 )]
+[node name="ColisionFinal" parent="." instance=ExtResource( 11 )]
+visible = false
 position = Vector2( 12981.7, 444.301 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
