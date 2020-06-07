@@ -129,3 +129,4 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="button_down" from="Control/HBoxContainer/Button2" to="." method="_on_Button2_button_down"]
