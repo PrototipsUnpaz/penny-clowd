@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/pantalla_negra.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/Unicorn Pop.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/takeshi_demo.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 105
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 81
+font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,15 +31,6 @@ size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Label" type="Label" parent="Control"]
-margin_left = 143.605
-margin_top = 304.395
-margin_right = 739.605
-margin_bottom = 408.395
-rect_min_size = Vector2( 0, 104 )
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 29.9
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control"]
 anchor_left = 0.5
@@ -57,3 +58,60 @@ margin_left = 450.0
 margin_right = 850.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 400, 100 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -400.0
+margin_top = -4.20477
+margin_right = 400.0
+margin_bottom = 407.795
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_constants/separation = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelVacia" type="Label" parent="Control/VBoxContainer"]
+margin_top = -7.62939e-06
+margin_right = 800.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 0, 104 )
+size_flags_horizontal = 5
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fallaste" type="Label" parent="Control/VBoxContainer"]
+margin_top = 134.0
+margin_right = 800.0
+margin_bottom = 262.0
+rect_min_size = Vector2( 0, 104 )
+size_flags_horizontal = 5
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 1 )
+text = "¡FALLASTE!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PublicoAbandono" type="Label" parent="Control/VBoxContainer"]
+margin_top = 292.0
+margin_right = 800.0
+margin_bottom = 398.0
+rect_min_size = Vector2( 0, 104 )
+size_flags_horizontal = 5
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 2 )
+text = "El público abandonó el circo"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
