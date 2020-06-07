@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/pantalla_negra.jpg" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 647.536, 361.631 )
+scale = Vector2( 1.28333, 1.13737 )
+texture = ExtResource( 1 )
