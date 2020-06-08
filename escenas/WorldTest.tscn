@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/sonido/nivel_1.ogg" type="AudioStream" id=6]
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
-[ext_resource path="res://escenas/Escena1a2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=11]
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",

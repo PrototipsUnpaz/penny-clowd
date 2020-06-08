@@ -1,7 +1,7 @@
 extends Node2D
 
 func volver_nivel_2():
-	get_tree().change_scene("res://escenas/nivel_2/Nivel2.tscn")
+	get_tree().change_scene("res://escenas/transicion_nivel_2/TransicionNivel2.tscn")
 	pass
 
 func _ready():
@@ -11,7 +11,7 @@ func _ready():
 	pass
 
 func volver_a_iniciar():
-	get_tree().change_scene("res://escenas/WorldTest.tscn")
+	get_tree().change_scene("res://escenas/transicion_nivel_1/TransicionNivel1.tscn")
 	pass
 
 func _on_Timer_timeout():

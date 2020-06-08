@@ -3,7 +3,7 @@ extends Control
 
 
 func _on_Jugar_button_down():
-	get_tree().change_scene("res://escenas/WorldTest.tscn")
+	get_tree().change_scene("res://escenas/transicion_nivel_1/TransicionNivel1.tscn")
 	pass 
 
 
