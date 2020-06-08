@@ -1,7 +1,7 @@
 extends Node2D
 
 func volver_nivel_2():
-	get_tree().change_scene("res://escenas/nivel_2/Nivel2.tscn")
+	get_tree().change_scene("res://escenas/transicion_nivel_2/TransicionNivel2.tscn")
 	pass
 
 func _ready():
