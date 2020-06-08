@@ -11,7 +11,7 @@ func _ready():
 	pass
 
 func volver_a_iniciar():
-	get_tree().change_scene("res://escenas/WorldTest.tscn")
+	get_tree().change_scene("res://escenas/transicion_nivel_1/TransicionNivel1.tscn")
 	pass
 
 func _on_Timer_timeout():
