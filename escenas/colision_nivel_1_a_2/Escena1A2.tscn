@@ -1,7 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/personaje/correr/001.png" type="Texture" id=1]
-[ext_resource path="res://escenas/Escena1a2.gd" type="Script" id=2]
+[ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.gd" type="Script" id=2]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 174.195, 290.147 )
