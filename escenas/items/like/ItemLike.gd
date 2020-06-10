@@ -3,6 +3,7 @@ extends Node2D
 
 
 func _on_Area2D_area_entered(area):
+		$AudioStreamPlayer.play()
 		Vidas.itemLike = true
 		Vidas.quitarItemLike = true
 		Vidas.suma_items()

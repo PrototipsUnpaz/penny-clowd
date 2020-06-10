@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/boton_opcion_5.ogg-46f996117d8114ab23f5b08972e91b3a.oggstr"
+
+[deps]
+
+source_file="res://assets/Sonidos_dos/boton_opcion_5.ogg"
+dest_files=[ "res://.import/boton_opcion_5.ogg-46f996117d8114ab23f5b08972e91b3a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -2,6 +2,7 @@ extends Control
 
 func _ready():
 	$Label.modulate = Color (1,1,1,0.7)
+	$AudioStreamPlayer.play()
 
 func _on_Jugar_button_down():
 	get_tree().change_scene("res://escenas/transicion_nivel_1/TransicionNivel1.tscn")

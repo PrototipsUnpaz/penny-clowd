@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TRG_Banks_-_04_-_The_travelling_show.ogg-1dad491bd9555cbca6cf910a71560744.oggstr"
+
+[deps]
+
+source_file="res://assets/Sonidos_dos/TRG_Banks_-_04_-_The_travelling_show.ogg"
+dest_files=[ "res://.import/TRG_Banks_-_04_-_The_travelling_show.ogg-1dad491bd9555cbca6cf910a71560744.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

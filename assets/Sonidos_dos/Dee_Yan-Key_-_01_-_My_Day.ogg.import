@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dee_Yan-Key_-_01_-_My_Day.ogg-35734e072f5256cebb2f9e2e9b2aedeb.oggstr"
+
+[deps]
+
+source_file="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg"
+dest_files=[ "res://.import/Dee_Yan-Key_-_01_-_My_Day.ogg-35734e072f5256cebb2f9e2e9b2aedeb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
