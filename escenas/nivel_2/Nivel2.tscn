@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.tscn" type="PackedScene" id=2]
@@ -8,6 +8,15 @@
 [ext_resource path="res://escenas/nivel_2/Nivel2.gd" type="Script" id=6]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg" type="AudioStream" id=8]
+[ext_resource path="res://assets/Unicorn Pop.otf" type="DynamicFontData" id=9]
+[ext_resource path="res://assets/menu_principal/boton salir.png" type="Texture" id=10]
+[ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
 
 [node name="nivel_2" type="Node2D"]
 script = ExtResource( 6 )
@@ -38,3 +47,37 @@ rect_scale = Vector2( 0.3, 0.3 )
 
 [node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+
+[node name="gatcies" type="CanvasLayer" parent="."]
+
+[node name="Salir" type="TextureButton" parent="gatcies"]
+visible = false
+margin_left = 513.232
+margin_top = 430.346
+margin_right = 1013.23
+margin_bottom = 680.346
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="gatcies"]
+visible = false
+margin_left = 261.982
+margin_top = 102.203
+margin_right = 1141.98
+margin_bottom = 275.203
+custom_fonts/font = SubResource( 1 )
+text = "¡Gracias por jugar esta demo!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+[connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
