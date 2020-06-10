@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const speed = 200
+var speed = 200
 var velocity = Vector2()
 
 
@@ -40,6 +40,10 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
+	if area.name == "Plataforma" :
+		speed = 0
+		velocity.x = 0
+		$AnimatedSprite.play("Saludo")
 	sonido_vida_extra()
 	pass
 	
@@ -47,5 +51,4 @@ func sonido_vida_extra():
 	if Vidas.vidaExtra == true :
 		$SonidoVidaObtenida.play()
 		pass
-		
 		

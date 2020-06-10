@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	$AnimatedSprite.play("icongodot")
 	$Timer.start()
 	pass
 
@@ -9,5 +10,11 @@ func ir_al_menu_principal():
 	pass
 
 func _on_Timer_timeout():
-	ir_al_menu_principal()
+	$AnimatedSprite.play("prototips")
+	$Timer2.start()
 	pass
+
+
+func _on_Timer2_timeout():
+	ir_al_menu_principal()
+	pass 
