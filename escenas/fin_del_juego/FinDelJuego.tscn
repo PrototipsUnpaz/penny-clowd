@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/pantalla_negra.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/Unicorn Pop.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/takeshi_demo.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://escenas/fin_del_juego/FinDelJuego.gd" type="Script" id=4]
 [ext_resource path="res://assets/Sonidos_dos/fin_del_juego_opcion_2.ogg" type="AudioStream" id=5]
+[ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -133,7 +134,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+
+[node name="Boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 [connection signal="button_down" from="Control/HBoxContainer/Button" to="." method="_on_Button_button_down"]
 [connection signal="button_down" from="Control/HBoxContainer/Button2" to="." method="_on_Button2_button_down"]

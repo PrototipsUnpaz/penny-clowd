@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://escenas/creditos/Creditos.gd" type="Script" id=1]
 [ext_resource path="res://assets/menu_principal/volver.png" type="Texture" id=2]
 [ext_resource path="res://assets/menu_principal/creditos2.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=4]
 
 [node name="Creditos" type="Node2D"]
 script = ExtResource( 1 )
@@ -21,5 +22,8 @@ texture_normal = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="button_down" from="Volver" to="." method="_on_TextureButton_button_down"]
+
+[node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
 [connection signal="button_down" from="Volver" to="." method="_on_Volver_button_down"]
+[connection signal="button_down" from="Volver" to="." method="_on_TextureButton_button_down"]

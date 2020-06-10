@@ -36,5 +36,5 @@ position = Vector2( 1800.27, 208.124 )
 margin_bottom = 200.0
 rect_scale = Vector2( 0.3, 0.3 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
