@@ -20,11 +20,12 @@ animations = [ {
 "speed": 20.0
 } ]
 
-[node name="Node2D" type="KinematicBody2D"]
+[node name="DiaboloSaltarin" type="KinematicBody2D"]
 collision_layer = 8
 script = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
@@ -37,7 +38,7 @@ position = Vector2( -0.107965, -0.606264 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 3 )
 animation = "animacion"
-frame = 3
+frame = 2
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

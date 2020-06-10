@@ -18,7 +18,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 65.9936, 519.585 )
+position = Vector2( 137.498, 543.28 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
@@ -108,8 +108,7 @@ stream = ExtResource( 6 )
 autoplay = true
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 11 )]
-visible = false
-position = Vector2( 12981.7, 444.301 )
+position = Vector2( 13201.9, 583.567 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2728, 328 )
