@@ -17,6 +17,7 @@ _global_script_class_icons={
 
 config/name="PennytheClowd"
 run/main_scene="res://escenas/splash_screen/SplashScreen.tscn"
+config/icon="res://assets/iconoapkpenny.png"
 
 [autoload]
 
