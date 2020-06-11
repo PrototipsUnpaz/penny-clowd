@@ -99,7 +99,7 @@ obstaculo = "circulo"
 
 [node name="UIVidas" parent="UI" instance=ExtResource( 4 )]
 margin_bottom = 200.0
-rect_scale = Vector2( 0.3, 0.3 )
+rect_scale = Vector2( 0.4, 0.4 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
