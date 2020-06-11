@@ -39,6 +39,27 @@ position = Vector2( 704, 240 )
 light_mask = 4
 position = Vector2( 1800.27, 208.124 )
 
+[node name="DiaboloM" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2202.65, 309.087 )
+
+[node name="DiaboloM2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4788.98, 303.925 )
+
+[node name="DiaboloM3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3911.38, 293.6 )
+
+[node name="DiaboloG" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2583.32, 296.073 )
+
+[node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3077.86, 299.327 )
+
+[node name="DiaboloSaltarin" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2879.39, 159.424 )
+
+[node name="DiaboloSaltarin2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5119.26, 144.639 )
+
 [node name="Ui" type="CanvasLayer" parent="."]
 
 [node name="UIVidas" parent="Ui" instance=ExtResource( 7 )]
@@ -78,6 +99,6 @@ __meta__ = {
 stream = ExtResource( 11 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 12.0
 [connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
