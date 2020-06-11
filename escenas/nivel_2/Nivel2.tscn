@@ -64,7 +64,7 @@ position = Vector2( 5119.26, 144.639 )
 
 [node name="UIVidas" parent="Ui" instance=ExtResource( 7 )]
 margin_bottom = 200.0
-rect_scale = Vector2( 0.3, 0.3 )
+rect_scale = Vector2( 0.4, 0.4 )
 
 [node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
