@@ -7,8 +7,7 @@ func _ready():
 	$SonrisaContainer/Sonrisa.modulate = Color(1,1,1,0.5)
 	pass
 	
-func _process(delta):
-	#$TextoVida.text = "x " + String(Vidas.vidasNivel)
+func _process(_delta):
 	cambiar_aspecto_item_love()
 	cambiar_aspecto_item_like()
 	cambiar_aspecto_item_smile()

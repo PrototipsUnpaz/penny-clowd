@@ -1,7 +1,8 @@
 extends StaticBody2D
 
-func _on_Area2D_area_entered(area):
+func _on_Area2D_area_entered(_area):
 	$Timer.start()
+	$AudioStreamPlayer.play()
 	
 	pass 
 

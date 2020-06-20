@@ -1,10 +1,13 @@
 extends KinematicBody2D
 
 var speed = 200
-var velocity = Vector2()
+var velocity = Vector2(0,0)
+var deshabilitarMovimiento = false 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
+	if deshabilitarMovimiento == true:
+		return
 	if Vidas.posPenny2 == false :
 		if global_position.y < 570:
 			velocity.y += 10
@@ -40,6 +43,18 @@ func _physics_process(delta):
 	pass
 
 func _on_Area2D_area_entered(area):
+	if area.name == "FinalAnimacion" :
+		deshabilitarMovimiento = true
+		$SonidoSalto.volume_db = -50
+		velocity = Vector2(0,0)
+		$AnimationPlayer.play("RectaFinal")
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,0, position)
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,1, position + Vector2(281.741,0))
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,2, position + Vector2 (345.9,-106.001))
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,3, position + Vector2(496.533,-312.425))
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,4, position + Vector2(613.693, -253.846))
+		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,5, position + Vector2(725.273,-114.37))
+		$Timer.start()
 	if area.name == "Plataforma" :
 		speed = 0
 		velocity.x = 0
@@ -52,3 +67,9 @@ func sonido_vida_extra():
 		$SonidoVidaObtenida.play()
 		pass
 		
+
+
+func _on_Timer_timeout():
+	$AnimatedSprite.play("SALTO")
+	$Timer.stop()
+	pass 

@@ -51,7 +51,6 @@ wait_time = 2.0
 position = Vector2( 625.99, 350.724 )
 scale = Vector2( 0.850232, 0.822826 )
 frames = SubResource( 1 )
-animation = "circus"
 speed_scale = 0.9
 
 [node name="Timer2" type="Timer" parent="."]

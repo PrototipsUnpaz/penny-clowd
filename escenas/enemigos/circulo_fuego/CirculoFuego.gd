@@ -2,13 +2,7 @@ extends AnimatedSprite
  
 var activo = false
 
-func _physics_process(delta):
-	
-	pass
-
-
-
-func _on_Area2D_area_entered(area):
+func _on_Area2D_area_entered(_area):
 	Vidas.quitar_vida()
 	queue_free()
 	if Vidas.vidasNivel == 0:
@@ -17,15 +11,7 @@ func _on_Area2D_area_entered(area):
 		get_tree().change_scene("res://escenas/pantalla_negra/PantallaNegra.tscn")
 	pass
 
-
-
-
-
-
-
-
-
-func _on_VisibilityNotifier2D_viewport_entered(viewport):
+func _on_VisibilityNotifier2D_viewport_entered(_viewport):
 	activo = true
 	print("visualizado")
-	pass # Replace with function body.
+	pass 

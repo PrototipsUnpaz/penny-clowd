@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/items/sonrisa.png" type="Texture" id=1]
 [ext_resource path="res://escenas/items/sonrisa/ItemSmile.gd" type="Script" id=2]
+[ext_resource path="res://assets/Sonidos_dos/item_opcion_3.ogg" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 25.1875
@@ -22,4 +23,5 @@ rotation = 0.523598
 shape = SubResource( 1 )
 
 [node name="SonidoItem" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 [connection signal="area_entered" from="Sprite/Area2D" to="." method="_on_Area2D_area_entered"]

@@ -1,7 +1,7 @@
 extends Sprite
 
 
-func _on_Area2D_area_entered(area):
+func _on_Area2D_area_entered(_area):
 	Vidas.quitar_vida()
 	queue_free()
 	if Vidas.vidasNivel == 0:
