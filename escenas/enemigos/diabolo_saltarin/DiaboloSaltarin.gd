@@ -20,8 +20,6 @@ func _physics_process(delta):
 	move_and_slide(velocity,Vector2(1000,0))
 	pass
 
-#DE ACÁ PARA ABAJO HAY FUNCIONES PARA QUE 
-#SALTE CON TIMER, incluyendo el timer de la línea 07:
 func _on_Area2D_area_entered(area):
 	Vidas.quitar_vida()
 	queue_free()

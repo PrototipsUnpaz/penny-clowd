@@ -8,7 +8,7 @@ func _ready():
 	Vidas.posPenny2 = false
 	pass
 	
-func _process(delta):
+func _process(_delta):
 	$UI/UIVidas/TextoVida.text = "X " + String(Vidas.vidasNivel)
 	pass
 
@@ -26,6 +26,8 @@ func quitar_item_like():
 	if Vidas.quitarItemLike == true :
 		$instancia_items2.queue_free()
 		pass
-		
 
-
+func _on_FinalAnimacion_area_entered(_area):
+	$Sountrack.volume_db = -25
+	#$Sountrack.stop()
+	pass 

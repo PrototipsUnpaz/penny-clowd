@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
@@ -9,6 +9,9 @@
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
 [ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=11]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 211.514 )
+
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
 ]]
@@ -18,7 +21,12 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+visible = false
 position = Vector2( 137.498, 543.28 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Player2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 13017.2, 605.875 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
@@ -108,7 +116,7 @@ stream = ExtResource( 5 )
 autoplay = true
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 11 )]
-position = Vector2( 13201.9, 583.567 )
+position = Vector2( 13961.3, 573.21 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2728, 328 )
@@ -120,3 +128,10 @@ position = Vector2( 8082, 362 )
 [node name="instancia_items3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 12418, 354 )
 obstaculo = "love"
+
+[node name="FinalAnimacion" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalAnimacion"]
+position = Vector2( 13272, 508.364 )
+shape = SubResource( 1 )
+[connection signal="area_entered" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_entered"]
