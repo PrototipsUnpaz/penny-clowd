@@ -18,8 +18,8 @@ func _on_Salir_button_down():
 	get_tree().quit()
 	pass 
 
-
-func _on_Timer_timeout():
-	$gatcies/Salir.visible = true
-	$gatcies/Label.visible = true
-	pass 
+#PRIMERA VERSION DE FIN DE LA DEMO:
+#func _on_Timer_timeout():
+#	$gatcies/Salir.visible = true
+#	$gatcies/Label.visible = true
+#	pass 
