@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/Unicorn_Pop.otf" type="DynamicFontData" id=9]
 [ext_resource path="res://assets/menu_principal/boton_salir.png" type="Texture" id=10]
 [ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/Fondo_Nivel_2/fond2.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -40,10 +41,10 @@ light_mask = 4
 position = Vector2( 3087.88, -258.884 )
 
 [node name="DiaboloM" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1809.03, -224.637 )
+position = Vector2( 1691.9, 302.438 )
 
 [node name="DiaboloM5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1624.22, -224.637 )
+position = Vector2( 1207.77, 305.691 )
 
 [node name="DiaboloM6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1986.44, -217.244 )
@@ -76,7 +77,7 @@ position = Vector2( 637.946, -403.349 )
 position = Vector2( 637.946, -262.895 )
 
 [node name="DiaboloG7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1029.74, -107.657 )
+position = Vector2( 2493.83, 286.022 )
 
 [node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1009.68, -401.185 )
@@ -139,5 +140,49 @@ stream = ExtResource( 11 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 12.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 3105.97, 1081.08 )
+texture = ExtResource( 12 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 13919.6, 1081.08 )
+texture = ExtResource( 12 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 12818, 1061 )
+texture = ExtResource( 12 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 11754.1, 1081.08 )
+texture = ExtResource( 12 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 10653.3, 1066.91 )
+texture = ExtResource( 12 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 9557, 1069.35 )
+texture = ExtResource( 12 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 8477.92, 1069.35 )
+texture = ExtResource( 12 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 7399.73, 1072.46 )
+texture = ExtResource( 12 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 6313.36, 1089.71 )
+texture = ExtResource( 12 )
+
+[node name="Sprite10" type="Sprite" parent="."]
+position = Vector2( 5240.86, 1088.11 )
+texture = ExtResource( 12 )
+
+[node name="Sprite11" type="Sprite" parent="."]
+position = Vector2( 4180.44, 1088.11 )
+texture = ExtResource( 12 )
 [connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
