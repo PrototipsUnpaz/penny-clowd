@@ -30,75 +30,75 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 light_mask = 4
-position = Vector2( 1806.41, -379.096 )
+position = Vector2( 2390.32, -174.718 )
+
+[node name="DiaboloM" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3587.94, -177.486 )
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
 light_mask = 4
-position = Vector2( 817.416, -413.811 )
+position = Vector2( 4119.9, -176.166 )
+
+[node name="DiaboloG" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5788.36, -162.409 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
 light_mask = 4
-position = Vector2( 3087.88, -258.884 )
-
-[node name="DiaboloM" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1691.9, 302.438 )
-
-[node name="DiaboloM5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1207.77, 305.691 )
-
-[node name="DiaboloM6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1986.44, -217.244 )
-
-[node name="DiaboloM4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1624.22, -387.267 )
-
-[node name="DiaboloM2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2147.4, -303.721 )
-
-[node name="DiaboloM3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1983.3, -373.554 )
-
-[node name="DiaboloG" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1014.95, -262.895 )
+position = Vector2( 8879.46, -146.198 )
 
 [node name="DiaboloG8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 837.538, -270.287 )
+position = Vector2( 9770.78, -143.765 )
+
+[node name="DiaboloM5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 14029.7, -77.6448 )
 
 [node name="DiaboloG2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 844.93, -137.226 )
+position = Vector2( 12358.9, -61.6715 )
 
 [node name="DiaboloG4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 652.731, -122.442 )
-
-[node name="DiaboloG5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 637.946, -403.349 )
-
-[node name="DiaboloG6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 637.946, -262.895 )
-
-[node name="DiaboloG7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2493.83, 286.022 )
-
-[node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1009.68, -401.185 )
+position = Vector2( 12804.1, -43.6584 )
 
 [node name="DiaboloSaltarin" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3107.98, -414.68 )
+position = Vector2( 15615.3, -30.8468 )
+
+[node name="DiaboloG5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16019.3, -39.4783 )
+
+[node name="DiaboloM3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 20663.4, -373.41 )
 
 [node name="DiaboloSaltarin3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3107.98, -414.68 )
+position = Vector2( 20635, -111.324 )
+
+[node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 19952.2, -97.1582 )
+
+[node name="DiaboloM2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 26725.6, -644.221 )
+
+[node name="DiaboloG6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21818, -680.844 )
+scale = Vector2( 1, 1 )
+
+[node name="DiaboloG7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 23868.8, -747.976 )
+scale = Vector2( 1, 1 )
 
 [node name="DiaboloSaltarin4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3409.95, -253.158 )
+position = Vector2( 28659.2, -631.968 )
+scale = Vector2( 1, 1 )
 
-[node name="DiaboloSaltarin5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3424, -407.657 )
+[node name="DiaboloM4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 34511.9, -724.033 )
+scale = Vector2( 0.2, 0.2 )
 
-[node name="DiaboloSaltarin6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3255.45, -260.181 )
+[node name="DiaboloM6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 33660.4, -747.501 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="DiaboloSaltarin2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3257.9, -402.428 )
+position = Vector2( 31703, -491.193 )
+scale = Vector2( 1, 1 )
 
 [node name="Ui" type="CanvasLayer" parent="."]
 
@@ -142,47 +142,43 @@ stream = ExtResource( 11 )
 wait_time = 12.0
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 3105.97, 1081.08 )
-texture = ExtResource( 12 )
-
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 13919.6, 1081.08 )
+position = Vector2( 3116.09, 359.353 )
 texture = ExtResource( 12 )
 
 [node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( 12818, 1061 )
+position = Vector2( 12832.8, 343.951 )
 texture = ExtResource( 12 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( 11754.1, 1081.08 )
+position = Vector2( 11754.1, 349.246 )
 texture = ExtResource( 12 )
 
 [node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 10653.3, 1066.91 )
+position = Vector2( 10668.1, 349.853 )
 texture = ExtResource( 12 )
 
 [node name="Sprite6" type="Sprite" parent="."]
-position = Vector2( 9557, 1069.35 )
+position = Vector2( 9579.18, 352.301 )
 texture = ExtResource( 12 )
 
 [node name="Sprite7" type="Sprite" parent="."]
-position = Vector2( 8477.92, 1069.35 )
+position = Vector2( 8507.49, 354.568 )
 texture = ExtResource( 12 )
 
 [node name="Sprite8" type="Sprite" parent="."]
-position = Vector2( 7399.73, 1072.46 )
+position = Vector2( 7421.91, 355.409 )
 texture = ExtResource( 12 )
 
 [node name="Sprite9" type="Sprite" parent="."]
-position = Vector2( 6313.36, 1089.71 )
+position = Vector2( 6342.92, 365.26 )
 texture = ExtResource( 12 )
 
 [node name="Sprite10" type="Sprite" parent="."]
-position = Vector2( 5240.86, 1088.11 )
+position = Vector2( 5270.43, 363.661 )
 texture = ExtResource( 12 )
 
 [node name="Sprite11" type="Sprite" parent="."]
-position = Vector2( 4180.44, 1088.11 )
+position = Vector2( 4202.61, 355.48 )
 texture = ExtResource( 12 )
 [connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
