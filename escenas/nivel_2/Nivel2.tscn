@@ -11,7 +11,7 @@
 [ext_resource path="res://assets/Unicorn_Pop.otf" type="DynamicFontData" id=9]
 [ext_resource path="res://assets/menu_principal/boton_salir.png" type="Texture" id=10]
 [ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=11]
-[ext_resource path="res://assets/Fondo_Nivel_2/fond2.png" type="Texture" id=12]
+[ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -141,44 +141,15 @@ stream = ExtResource( 11 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 12.0
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 3116.09, 359.353 )
-texture = ExtResource( 12 )
+[node name="instancia_items" parent="." instance=ExtResource( 13 )]
+position = Vector2( 4936.43, 117.711 )
+obstaculo = "smite"
 
-[node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( 12832.8, 343.951 )
-texture = ExtResource( 12 )
+[node name="instancia_items2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 9927.05, 116.66 )
 
-[node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( 11754.1, 349.246 )
-texture = ExtResource( 12 )
-
-[node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 10668.1, 349.853 )
-texture = ExtResource( 12 )
-
-[node name="Sprite6" type="Sprite" parent="."]
-position = Vector2( 9579.18, 352.301 )
-texture = ExtResource( 12 )
-
-[node name="Sprite7" type="Sprite" parent="."]
-position = Vector2( 8507.49, 354.568 )
-texture = ExtResource( 12 )
-
-[node name="Sprite8" type="Sprite" parent="."]
-position = Vector2( 7421.91, 355.409 )
-texture = ExtResource( 12 )
-
-[node name="Sprite9" type="Sprite" parent="."]
-position = Vector2( 6342.92, 365.26 )
-texture = ExtResource( 12 )
-
-[node name="Sprite10" type="Sprite" parent="."]
-position = Vector2( 5270.43, 363.661 )
-texture = ExtResource( 12 )
-
-[node name="Sprite11" type="Sprite" parent="."]
-position = Vector2( 4202.61, 355.48 )
-texture = ExtResource( 12 )
+[node name="instancia_items3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 14581.6, 103.287 )
+obstaculo = "love"
 [connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
