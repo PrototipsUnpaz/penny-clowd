@@ -21,86 +21,110 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-visible = false
 position = Vector2( 137.498, 543.28 )
-scale = Vector2( 0.25, 0.25 )
-
-[node name="Player2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 13017.2, 605.875 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="FondoMuestra" parent="." instance=ExtResource( 3 )]
 
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 2 )]
-position = Vector2( 866.135, 596.314 )
+position = Vector2( 1033.55, 596.314 )
 
-[node name="GeneradorEnemigos4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2152.12, 597.826 )
-
-[node name="GeneradorEnemigos5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2739.32, 576.963 )
+[node name="GeneradorEnemigos3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13963.9, 558.506 )
 obstaculo = "pared"
 
+[node name="GeneradorEnemigos23" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12740.7, 592.372 )
+
+[node name="GeneradorEnemigos24" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9077.07, 572.377 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos25" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10591, 602.75 )
+
+[node name="GeneradorEnemigos26" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6771.6, 572.749 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos27" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5571.94, 593.922 )
+
+[node name="GeneradorEnemigos28" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3722.35, 573.823 )
+obstaculo = "pared"
+
+[node name="GeneradorEnemigos4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2491.73, 384.969 )
+obstaculo = "circulo"
+
+[node name="GeneradorEnemigos5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2287.66, 600.15 )
+
 [node name="GeneradorEnemigos2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1598.19, 599.159 )
+position = Vector2( 1401.08, 572.74 )
+obstaculo = "pared"
 
 [node name="GeneradorEnemigos7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3347.37, 603.651 )
+position = Vector2( 2658.38, 599.385 )
 
 [node name="GeneradorEnemigos22" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4066, 378 )
+position = Vector2( 5065.57, 369.865 )
 obstaculo = "circulo"
 
 [node name="GeneradorEnemigos9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4626.36, 603.651 )
+position = Vector2( 5820.1, 592.653 )
 
 [node name="GeneradorEnemigos10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5080.33, 603.651 )
-
-[node name="GeneradorEnemigos11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5922.8, 574.057 )
+position = Vector2( 4043.67, 571.205 )
 obstaculo = "pared"
 
+[node name="GeneradorEnemigos11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7508.61, 379.083 )
+obstaculo = "circulo"
+
 [node name="GeneradorEnemigos12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 6455.35, 603.651 )
+position = Vector2( 6461.07, 594.266 )
 
 [node name="GeneradorEnemigos13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 6979.49, 574.058 )
+position = Vector2( 12088.4, 563.855 )
 obstaculo = "pared"
 
 [node name="GeneradorEnemigos14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 7537.91, 599.286 )
+position = Vector2( 7511.61, 593.63 )
 
 [node name="GeneradorEnemigos15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 8773.24, 574.058 )
 obstaculo = "pared"
 
 [node name="GeneradorEnemigos16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 9777.22, 599.286 )
+position = Vector2( 10081.3, 375.906 )
+obstaculo = "circulo"
 
 [node name="GeneradorEnemigos17" parent="." instance=ExtResource( 2 )]
-position = Vector2( 9558.96, 599.286 )
-
-[node name="GeneradorEnemigos18" parent="." instance=ExtResource( 2 )]
-position = Vector2( 10554.5, 565.648 )
+position = Vector2( 10357.5, 568.434 )
 obstaculo = "pared"
 
+[node name="GeneradorEnemigos18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11580.1, 598.243 )
+
 [node name="GeneradorEnemigos19" parent="." instance=ExtResource( 2 )]
-position = Vector2( 11191.5, 599.286 )
+position = Vector2( 10820, 602.078 )
 
 [node name="GeneradorEnemigos20" parent="." instance=ExtResource( 2 )]
-position = Vector2( 11846.3, 574.058 )
+position = Vector2( 14210.4, 558.947 )
 obstaculo = "pared"
 
 [node name="GeneradorEnemigos21" parent="." instance=ExtResource( 2 )]
-position = Vector2( 11409.8, 599.286 )
-
-[node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8106.56, 378 )
+position = Vector2( 12734, 367.417 )
 obstaculo = "circulo"
 
+[node name="GeneradorEnemigos6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13697.1, 560.217 )
+obstaculo = "pared"
+
 [node name="GeneradorEnemigos8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12423.7, 373.635 )
+position = Vector2( 14707, 373.868 )
 obstaculo = "circulo"
 
 [node name="UI" type="CanvasLayer" parent="."]
@@ -116,22 +140,22 @@ stream = ExtResource( 5 )
 autoplay = true
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 11 )]
-position = Vector2( 13961.3, 573.21 )
+position = Vector2( 15639.3, 518.27 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2728, 328 )
+position = Vector2( 5060.26, 349.758 )
 obstaculo = "smite"
 
 [node name="instancia_items2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 8082, 362 )
+position = Vector2( 10065.7, 339.685 )
 
 [node name="instancia_items3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 12418, 354 )
+position = Vector2( 14664.3, 340.059 )
 obstaculo = "love"
 
 [node name="FinalAnimacion" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalAnimacion"]
-position = Vector2( 13272, 508.364 )
+position = Vector2( 15250.9, 467.375 )
 shape = SubResource( 1 )
 [connection signal="area_entered" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_entered"]
