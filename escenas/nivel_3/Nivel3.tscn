@@ -5,7 +5,7 @@
 [ext_resource path="res://escenas/fondos/FondoMuestra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/Sonidos_dos/TRG_Banks_-_04_-_The_travelling_show.ogg" type="AudioStream" id=5]
-[ext_resource path="res://escenas/WorldTest.gd" type="Script" id=8]
+[ext_resource path="res://escenas/nivel_3/Nivel3.gd" type="Script" id=6]
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
 [ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=11]
 
@@ -15,7 +15,7 @@ extents = Vector2( 10, 211.514 )
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
 ]]
-script = ExtResource( 8 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
