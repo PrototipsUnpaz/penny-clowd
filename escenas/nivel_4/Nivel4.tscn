@@ -5,7 +5,7 @@
 [ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.tscn" type="PackedScene" id=3]
 [ext_resource path="res://escenas/enemigos/diabolo_saltarin/DiaboloSaltarin.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/fondos/fondo-nivel-2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://escenas/nivel_2/Nivel2.gd" type="Script" id=6]
+[ext_resource path="res://escenas/nivel_4/Nivel4.gd" type="Script" id=6]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg" type="AudioStream" id=8]
 [ext_resource path="res://assets/Unicorn_Pop.otf" type="DynamicFontData" id=9]
@@ -30,75 +30,90 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 light_mask = 4
-position = Vector2( 2390.32, -174.718 )
+position = Vector2( 34086.7, -186.977 )
 
 [node name="DiaboloM" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3587.94, -177.486 )
+position = Vector2( 35099.1, -164.554 )
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
 light_mask = 4
-position = Vector2( 4119.9, -176.166 )
+position = Vector2( 21776.5, -172.267 )
 
 [node name="DiaboloG" parent="." instance=ExtResource( 2 )]
-position = Vector2( 5788.36, -162.409 )
+position = Vector2( 21340.7, -176.189 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
 light_mask = 4
-position = Vector2( 8879.46, -146.198 )
+position = Vector2( 10590, -120.586 )
 
 [node name="DiaboloG8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 9770.78, -143.765 )
+position = Vector2( 3932.88, -133.151 )
 
 [node name="DiaboloM5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 14029.7, -77.6448 )
+position = Vector2( 22512.3, -8.60974 )
 
 [node name="DiaboloG2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12358.9, -61.6715 )
+position = Vector2( 25846.7, -147.102 )
 
 [node name="DiaboloG4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12804.1, -43.6584 )
+position = Vector2( 4320.19, -145.022 )
 
 [node name="DiaboloSaltarin" parent="." instance=ExtResource( 4 )]
-position = Vector2( 15615.3, -30.8468 )
+position = Vector2( 22034.1, -18.5046 )
 
 [node name="DiaboloG5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 16019.3, -39.4783 )
+position = Vector2( 1968.74, -170.601 )
 
 [node name="DiaboloM3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 20663.4, -373.41 )
+position = Vector2( 8811.4, -114.81 )
 
 [node name="DiaboloSaltarin3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 20635, -111.324 )
+position = Vector2( 29935.5, -160.465 )
 
 [node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 19952.2, -97.1582 )
+position = Vector2( 11270.6, -20.7312 )
 
 [node name="DiaboloM2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 26725.6, -644.221 )
+position = Vector2( 21417.9, -9.43025 )
 
 [node name="DiaboloG6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 21818, -680.844 )
-scale = Vector2( 1, 1 )
+position = Vector2( 14211.9, -46.054 )
 
 [node name="DiaboloG7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 23868.8, -747.976 )
-scale = Vector2( 1, 1 )
+position = Vector2( 25377.6, -148.741 )
+
+[node name="DiaboloG9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9181.56, -140.633 )
+
+[node name="DiaboloG10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14659.7, -67.9829 )
+
+[node name="DiaboloG11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11751.1, -12.0535 )
 
 [node name="DiaboloSaltarin4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 28659.2, -631.968 )
-scale = Vector2( 1, 1 )
+position = Vector2( 5658.82, -122.741 )
 
 [node name="DiaboloM4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 34511.9, -724.033 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 6548.7, -124.77 )
 
 [node name="DiaboloM6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 33660.4, -747.501 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 8276.61, -115.945 )
+
+[node name="DiaboloM7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 34554.9, -198.759 )
+
+[node name="DiaboloM8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 21958.3, -14.7132 )
 
 [node name="DiaboloSaltarin2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 31703, -491.193 )
-scale = Vector2( 1, 1 )
+position = Vector2( 26808.6, -159.311 )
+
+[node name="DiaboloSaltarin5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 33638.6, -164.209 )
+
+[node name="DiaboloSaltarin6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 17737.5, -68.1202 )
 
 [node name="Ui" type="CanvasLayer" parent="."]
 
@@ -146,7 +161,7 @@ position = Vector2( 4936.43, 117.711 )
 obstaculo = "smite"
 
 [node name="instancia_items2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 9927.05, 116.66 )
+position = Vector2( 10035.9, 115.73 )
 
 [node name="instancia_items3" parent="." instance=ExtResource( 13 )]
 position = Vector2( 14581.6, 103.287 )

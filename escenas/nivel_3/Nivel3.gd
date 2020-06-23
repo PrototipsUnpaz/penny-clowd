@@ -1,18 +1,16 @@
 extends Node2D
 
-
 func _ready():
-	$Timer.start()
-	$Soundtrack.play()
 	quitar_item_love()
 	quitar_item_like()
 	quitar_item_sonrisa()
-	Vidas.nivelDos = true
-	Vidas.posPenny2 = true
+	Vidas.nivelDos = false
+	Vidas.nivelTres = true
+	Vidas.posPenny2 = false
 	pass
 	
-func _process(delta):
-	$Ui/UIVidas/TextoVida. text="x "+String(Vidas.vidasNivel)
+func _process(_delta):
+	$UI/UIVidas/TextoVida.text = "X " + String(Vidas.vidasNivel)
 	pass
 
 func quitar_item_love():
@@ -30,13 +28,7 @@ func quitar_item_like():
 		$instancia_items2.queue_free()
 		pass
 
-func _on_Salir_button_down():
-	$SonidoBoton.play()
-	get_tree().quit()
+func _on_FinalAnimacion_area_entered(_area):
+	$Sountrack.volume_db = -25
+	#$Sountrack.stop()
 	pass 
-
-#PRIMERA VERSION DE FIN DE LA DEMO:
-#func _on_Timer_timeout():
-#	$gatcies/Salir.visible = true
-#	$gatcies/Label.visible = true
-#	pass 
