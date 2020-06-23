@@ -19,7 +19,7 @@ size = 32
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 66
+size = 53
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=5]
@@ -37,9 +37,9 @@ texture = ExtResource( 1 )
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -3.99451
+margin_top = 22.4324
 margin_right = 1280.0
-margin_bottom = 716.006
+margin_bottom = 742.433
 rect_min_size = Vector2( 1280, 720 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -113,7 +113,7 @@ size_flags_horizontal = 5
 size_flags_vertical = 8
 size_flags_stretch_ratio = 0.0
 custom_fonts/font = SubResource( 6 )
-text = "Gracias por jugar a esta demo de"
+text = "¡Ganaste! Gracias por jugar la versión demo de"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -140,7 +140,7 @@ stream = ExtResource( 7 )
 stream = ExtResource( 6 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 637.183, 280.419 )
+position = Vector2( 648.928, 303.91 )
 scale = Vector2( 1, 0.928223 )
 texture = ExtResource( 5 )
 [connection signal="button_down" from="Control/HBoxContainer/Button" to="." method="_on_Button_button_down"]
