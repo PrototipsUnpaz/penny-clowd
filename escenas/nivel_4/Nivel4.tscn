@@ -1,0 +1,149 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://escenas/enemigos/diabolo_g/DiaboloG.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.tscn" type="PackedScene" id=3]
+[ext_resource path="res://escenas/enemigos/diabolo_saltarin/DiaboloSaltarin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://escenas/fondos/fondo-nivel-2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://escenas/nivel_4/Nivel4.gd" type="Script" id=6]
+[ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg" type="AudioStream" id=8]
+[ext_resource path="res://assets/Unicorn_Pop.otf" type="DynamicFontData" id=9]
+[ext_resource path="res://assets/menu_principal/boton_salir.png" type="Texture" id=10]
+[ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=11]
+[ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[node name="nivel_2" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="fondo2" parent="." instance=ExtResource( 5 )]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 56, 72 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+light_mask = 4
+position = Vector2( 2390.32, -174.718 )
+
+[node name="DiaboloM" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3587.94, -177.486 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
+light_mask = 4
+position = Vector2( 4119.9, -176.166 )
+
+[node name="DiaboloG" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5788.36, -162.409 )
+
+[node name="Node2D" parent="." instance=ExtResource( 4 )]
+light_mask = 4
+position = Vector2( 8879.46, -146.198 )
+
+[node name="DiaboloG8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9770.78, -143.765 )
+
+[node name="DiaboloM5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 14029.7, -77.6448 )
+
+[node name="DiaboloG2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12358.9, -61.6715 )
+
+[node name="DiaboloG4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12804.1, -43.6584 )
+
+[node name="DiaboloSaltarin" parent="." instance=ExtResource( 4 )]
+position = Vector2( 15615.3, -30.8468 )
+
+[node name="DiaboloG5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16019.3, -39.4783 )
+
+[node name="DiaboloM3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 20663.4, -373.41 )
+
+[node name="DiaboloSaltarin3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 20635, -111.324 )
+
+[node name="DiaboloG3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 19952.2, -97.1582 )
+
+[node name="DiaboloM2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 26725.6, -644.221 )
+
+[node name="DiaboloG6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21818, -680.844 )
+
+[node name="DiaboloG7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 23868.8, -747.976 )
+
+[node name="DiaboloSaltarin4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 28659.2, -631.968 )
+
+[node name="DiaboloM4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 34511.9, -724.033 )
+
+[node name="DiaboloM6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 33660.4, -747.501 )
+
+[node name="DiaboloSaltarin2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 31703, -491.193 )
+
+[node name="Ui" type="CanvasLayer" parent="."]
+
+[node name="UIVidas" parent="Ui" instance=ExtResource( 7 )]
+margin_bottom = 200.0
+rect_scale = Vector2( 0.4, 0.4 )
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="gatcies" type="CanvasLayer" parent="."]
+
+[node name="Salir" type="TextureButton" parent="gatcies"]
+visible = false
+margin_left = 513.232
+margin_top = 430.346
+margin_right = 1013.23
+margin_bottom = 680.346
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="gatcies"]
+visible = false
+margin_left = 261.982
+margin_top = 102.203
+margin_right = 1141.98
+margin_bottom = 275.203
+custom_fonts/font = SubResource( 1 )
+text = "¡Gracias por jugar esta demo!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 12.0
+
+[node name="instancia_items" parent="." instance=ExtResource( 13 )]
+position = Vector2( 4936.43, 117.711 )
+obstaculo = "smite"
+
+[node name="instancia_items2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 9927.05, 116.66 )
+
+[node name="instancia_items3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 14581.6, 103.287 )
+obstaculo = "love"
+[connection signal="button_down" from="gatcies/Salir" to="." method="_on_Salir_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

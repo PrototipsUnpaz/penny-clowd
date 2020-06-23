@@ -10,6 +10,7 @@ var itemSmile = false
 var posPenny2 = false
 var nivelDos = false
 var nivelTres = false
+var nivelCuatro = false
 
 var vidasNivel = 3
 var vidaExtra = false
