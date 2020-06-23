@@ -4,8 +4,8 @@ func _ready():
 	quitar_item_love()
 	quitar_item_like()
 	quitar_item_sonrisa()
-#	Vidas.nivelDos = false
-#	Vidas.nivelTres = true
+	Vidas.nivelDos = false
+	Vidas.nivelTres = true
 	Vidas.posPenny2 = false
 	pass
 	
