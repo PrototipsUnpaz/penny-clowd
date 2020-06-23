@@ -7,7 +7,6 @@
 [ext_resource path="res://assets/Sonidos_dos/fin_del_juego_opcion_2.ogg" type="AudioStream" id=5]
 [ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=6]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 32
 font_data = ExtResource( 3 )
