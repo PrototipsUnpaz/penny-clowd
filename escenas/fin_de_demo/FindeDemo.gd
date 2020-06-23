@@ -13,6 +13,9 @@ func _on_Button2_button_down():
 	Vidas.quitarItemLike = false
 	Vidas.quitarItemLove = false
 	Vidas.quitarItemSmile = false
+	Vidas.nivelDos = false
+	Vidas.nivelTres = false
+	Vidas.nivelCuatro = false
 	get_tree().change_scene('res://escenas/transicion_nivel_1/TransicionNivel1.tscn')
 	pass
 
@@ -27,5 +30,8 @@ func _on_Button_button_down():
 	Vidas.quitarItemLike = false
 	Vidas.quitarItemLove = false
 	Vidas.quitarItemSmile = false
+	Vidas.nivelDos = false
+	Vidas.nivelTres = false
+	Vidas.nivelCuatro = false
 	get_tree().change_scene("res://escenas/menu_principal/MenuPrincipal.tscn")
 	pass 
