@@ -12,9 +12,20 @@ func volver_nivel_3():
 	get_tree().change_scene("res://escenas/transicion_nivel_3/TransicionNivel3.tscn")
 	pass
 
+func volver_nivel_4():
+	get_tree().change_scene("res://escenas/transicion_nivel_4/TransicionNivel4.tscn")
+	pass
+
 func chequear_nivel_3():
 	if Vidas.nivelTres == true:
 		volver_nivel_3()
+	else: 
+		chequear_nivel_4()
+	pass 
+
+func chequear_nivel_4():
+	if Vidas.nivelCuatro == true:
+		volver_nivel_4()
 	else: 
 		volver_a_iniciar()
 	pass 
