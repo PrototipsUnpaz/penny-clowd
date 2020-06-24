@@ -44,6 +44,8 @@ func _physics_process(_delta):
 	pass
 
 func _on_Area2D_area_entered(area):
+	if area.name == "Item" :
+		$SonidoItem.play()
 	if area.name == "FinalAnimacion" :
 		deshabilitarMovimiento = true
 		$SonidoSalto.volume_db = -24

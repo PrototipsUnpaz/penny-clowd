@@ -11,5 +11,5 @@ dest_files=[ "res://.import/ganar_opcion_1.ogg-98098fe665d8006199596b3cdb24395f.
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

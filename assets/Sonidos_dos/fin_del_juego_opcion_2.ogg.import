@@ -11,5 +11,5 @@ dest_files=[ "res://.import/fin_del_juego_opcion_2.ogg-075455a56f4bb1fbe423d2357
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

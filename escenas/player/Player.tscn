@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://escenas/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/personaje/correr/3.png" type="Texture" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://assets/personaje/salto/S7.png" type="Texture" id=24]
 [ext_resource path="res://assets/personaje/saludo/ saludo6.png" type="Texture" id=25]
 [ext_resource path="res://assets/personaje/salto/S4.png" type="Texture" id=26]
+[ext_resource path="res://assets/Sonidos_dos/item_opcion_3.ogg" type="AudioStream" id=27]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 110.692, 259.371 )
@@ -106,5 +107,8 @@ stream = ExtResource( 20 )
 anims/RectaFinal = SubResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="SonidoItem" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
