@@ -66,6 +66,7 @@ func _on_Area2D_area_entered(area):
 func sonido_vida_extra():
 	if Vidas.vidaExtra == true :
 		$SonidoVidaObtenida.play()
+		Vidas.vidaExtra = false
 		pass
 
 func _on_Timer_timeout():

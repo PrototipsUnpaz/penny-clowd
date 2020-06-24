@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/WorldTest.gd" type="Script" id=1]
 [ext_resource path="res://escenas/colision_nivel_1_a_2/FinalAnimacion.tscn" type="PackedScene" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=8]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/Sonidos_dos/TRG_Banks_-_04_-_The_travelling_show.ogg" type="AudioStream" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 39.0166, 148.71 )
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
@@ -125,3 +128,12 @@ position = Vector2( 12418, 354 )
 obstaculo = "love"
 
 [node name="FinalAnimacion" parent="." instance=ExtResource( 2 )]
+
+[node name="MUSICOFF" type="Area2D" parent="."]
+position = Vector2( 13845.3, 523.246 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MUSICOFF"]
+position = Vector2( 13.9482, -50.2113 )
+shape = SubResource( 1 )
+[connection signal="area_entered" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_entered"]
+[connection signal="area_entered" from="MUSICOFF" to="." method="_on_MUSICOFF_area_entered"]
