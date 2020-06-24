@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/instanciar_enemigos/InstanciaEnemigos.tscn" type="PackedScene" id=2]
@@ -12,6 +12,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 211.514 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 29.3252, 163.417 )
 
 [node name="WorldTest" type="Node2D" groups=[
 "UI",
@@ -173,7 +176,7 @@ size_flags_vertical = 4
 stream = ExtResource( 5 )
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 11 )]
-position = Vector2( 15639.3, 518.27 )
+position = Vector2( 15788, 564.03 )
 
 [node name="instancia_items" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5060.26, 349.758 )
@@ -187,8 +190,16 @@ position = Vector2( 14664.3, 340.059 )
 obstaculo = "love"
 
 [node name="FinalAnimacion" type="Area2D" parent="."]
+position = Vector2( 15098.7, 475.538 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalAnimacion"]
-position = Vector2( 15250.9, 467.375 )
 shape = SubResource( 1 )
+
+[node name="MUSICOFF" type="Area2D" parent="."]
+position = Vector2( 15665.8, 420.356 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MUSICOFF"]
+position = Vector2( 17.124, 0 )
+shape = SubResource( 2 )
 [connection signal="area_entered" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_entered"]
+[connection signal="area_entered" from="MUSICOFF" to="." method="_on_MUSICOFF_area_entered"]

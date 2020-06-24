@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://escenas/nivel_2/Nivel2.gd" type="Script" id=1]
 [ext_resource path="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg" type="AudioStream" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=8]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=9]
 [ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 25.0137, 77.2244 )
 
 [node name="nivel_2" type="Node2D"]
 script = ExtResource( 1 )
@@ -104,14 +107,10 @@ position = Vector2( 6427.99, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos19" parent="." instance=ExtResource( 3 )]
-position = Vector2( 8913.57, 331 )
+position = Vector2( 8950.64, 331 )
 
 [node name="instanciar_diabolos28" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9244.41, 339 )
-enemigo = "DiaboloM"
-
-[node name="instanciar_diabolos29" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9474.59, 339 )
+position = Vector2( 9242.65, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos20" parent="." instance=ExtResource( 3 )]
@@ -152,8 +151,24 @@ position = Vector2( 5749.01, 13.9698 )
 position = Vector2( 8315.87, 11.6964 )
 
 [node name="DiaboloSaltarin5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 12076.4, -3.67848 )
+position = Vector2( 14846.9, 15.4285 )
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 10 )]
-position = Vector2( 9723.74, 331 )
-scale = Vector2( 0.9, 0.4 )
+position = Vector2( 9723.74, 289.891 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="MUSICOFF" type="Area2D" parent="."]
+position = Vector2( 9620.8, 229.918 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MUSICOFF"]
+shape = SubResource( 1 )
+
+[node name="FinalAnimacion" type="Area2D" parent="."]
+position = Vector2( 9027.67, 268.09 )
+scale = Vector2( 0.570672, 1.00958 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalAnimacion"]
+position = Vector2( 5.14648, 5.81686 )
+shape = SubResource( 1 )
+[connection signal="area_entered" from="MUSICOFF" to="." method="_on_MUSICOFF_area_entered"]
+[connection signal="area_exited" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_exited"]

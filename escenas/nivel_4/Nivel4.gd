@@ -28,3 +28,14 @@ func quitar_item_like():
 	if Vidas.quitarItemLike == true :
 		$instancia_items2.queue_free()
 		pass
+
+
+func _on_FinalAnimacion_area_entered(area):
+	$Ui/Pausa.visible = false
+	$Player/SonidoSalto.volume_db = -50
+	pass 
+
+
+func _on_MUSICOFF_area_entered(area):
+	$Soundtrack.stop()
+	pass 

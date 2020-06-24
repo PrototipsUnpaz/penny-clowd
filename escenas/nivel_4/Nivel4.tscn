@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://escenas/nivel_4/Nivel4.gd" type="Script" id=1]
 [ext_resource path="res://assets/Sonidos_dos/Dee_Yan-Key_-_01_-_My_Day.ogg" type="AudioStream" id=2]
 [ext_resource path="res://escenas/instanciar_enemigos/instanciar_diabolos.tscn" type="PackedScene" id=3]
-[ext_resource path="res://escenas/colision_nivel_1_a_2/FinalAnimacion.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/menu_pausa/MenuPausa.tscn" type="PackedScene" id=5]
 [ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://escenas/enemigos/diabolo_saltarin/DiaboloSaltarin.tscn" type="PackedScene" id=7]
@@ -12,6 +11,11 @@
 [ext_resource path="res://escenas/items/instancia_items/instancia_items.tscn" type="PackedScene" id=10]
 [ext_resource path="res://escenas/ui_vidas/UIVidas.tscn" type="PackedScene" id=11]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 22.7285, 175.328 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 38.6377, 174.073 )
 
 [node name="nivel_4" type="Node2D"]
 script = ExtResource( 1 )
@@ -23,43 +27,43 @@ position = Vector2( 56, 72 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="instanciar_diabolos" parent="." instance=ExtResource( 3 )]
-position = Vector2( 909.18, 331.231 )
+position = Vector2( 909.18, 331 )
 
 [node name="instanciar_diabolos2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1346.73, 329.219 )
+position = Vector2( 1346.73, 331 )
 
 [node name="instanciar_diabolos3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1582.24, 329.943 )
+position = Vector2( 1582.24, 331 )
 
 [node name="instanciar_diabolos4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2018.93, 338.44 )
+position = Vector2( 2018.93, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2256.89, 340.077 )
+position = Vector2( 2256.89, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2474.7, 338.811 )
+position = Vector2( 2474.7, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2735.59, 335.031 )
+position = Vector2( 2735.59, 331 )
 
 [node name="instanciar_diabolos8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3157.95, 333.227 )
+position = Vector2( 3157.95, 331 )
 
 [node name="instanciar_diabolos9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3332.33, 330.654 )
+position = Vector2( 3332.33, 331 )
 
 [node name="instanciar_diabolos10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3691.69, 330.302 )
+position = Vector2( 3691.69, 331 )
 
 [node name="instanciar_diabolos11" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3867.54, 328.673 )
+position = Vector2( 3867.54, 331 )
 
 [node name="instanciar_diabolos12" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4312.4, 340.067 )
+position = Vector2( 4312.4, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos13" parent="." instance=ExtResource( 3 )]
@@ -77,53 +81,53 @@ position = Vector2( 5057.13, 335.344 )
 position = Vector2( 5269.47, 333.562 )
 
 [node name="instanciar_diabolos17" parent="." instance=ExtResource( 3 )]
-position = Vector2( 5482.52, 333.965 )
+position = Vector2( 9861.97, 331 )
 
 [node name="instanciar_diabolos18" parent="." instance=ExtResource( 3 )]
 position = Vector2( 5890.05, 341.049 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos19" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6160.45, 338.818 )
+position = Vector2( 6160.45, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos20" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6393.47, 341.012 )
+position = Vector2( 6393.47, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos21" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6754.71, 328.883 )
+position = Vector2( 6754.71, 331 )
 
 [node name="instanciar_diabolos23" parent="." instance=ExtResource( 3 )]
-position = Vector2( 7093.5, 325.234 )
+position = Vector2( 7093.5, 331 )
 
 [node name="instanciar_diabolos24" parent="." instance=ExtResource( 3 )]
-position = Vector2( 7370.56, 327.307 )
+position = Vector2( 7370.56, 331 )
 
 [node name="instanciar_diabolos25" parent="." instance=ExtResource( 3 )]
-position = Vector2( 7670.85, 327.066 )
+position = Vector2( 7670.85, 331 )
 
 [node name="instanciar_diabolos26" parent="." instance=ExtResource( 3 )]
-position = Vector2( 7922.59, 326.918 )
+position = Vector2( 7922.59, 331 )
 
 [node name="instanciar_diabolos27" parent="." instance=ExtResource( 3 )]
-position = Vector2( 8306.33, 338.792 )
+position = Vector2( 8306.33, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos28" parent="." instance=ExtResource( 3 )]
-position = Vector2( 8645.68, 336.772 )
+position = Vector2( 8645.68, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos29" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9409.35, 345.581 )
+position = Vector2( 10200.9, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos30" parent="." instance=ExtResource( 3 )]
-position = Vector2( 9186.1, 345.681 )
+position = Vector2( 9489.29, 339 )
 enemigo = "DiaboloM"
 
 [node name="instanciar_diabolos31" parent="." instance=ExtResource( 3 )]
-position = Vector2( 8960.11, 345.084 )
+position = Vector2( 8986.3, 339 )
 enemigo = "DiaboloM"
 
 [node name="DiaboloSaltarin" parent="." instance=ExtResource( 7 )]
@@ -173,10 +177,19 @@ position = Vector2( 9185.24, 160.423 )
 obstaculo = "love"
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 6 )]
-position = Vector2( 9726.79, 330.894 )
-scale = Vector2( 0.9, 0.4 )
+position = Vector2( 11003, 286 )
+scale = Vector2( 0.9, 0.9 )
 
-[node name="FinalAnimacion" parent="." instance=ExtResource( 4 )]
-position = Vector2( 9469.46, 336.31 )
-scale = Vector2( 2, 7 )
-angular_damp = 0.0
+[node name="FinalAnimacion" type="Area2D" parent="."]
+position = Vector2( 10320.1, 206.411 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalAnimacion"]
+shape = SubResource( 1 )
+
+[node name="MUSICOFF" type="Area2D" parent="."]
+position = Vector2( 10917.7, 202.157 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MUSICOFF"]
+shape = SubResource( 2 )
+[connection signal="area_entered" from="FinalAnimacion" to="." method="_on_FinalAnimacion_area_entered"]
+[connection signal="area_entered" from="MUSICOFF" to="." method="_on_MUSICOFF_area_entered"]
