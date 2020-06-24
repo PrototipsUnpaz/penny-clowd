@@ -10,8 +10,6 @@
 [ext_resource path="res://assets/Sonidos_dos/Fig_Leaf_Times_Two.ogg" type="AudioStream" id=8]
 [ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=9]
 
-
-
 [sub_resource type="DynamicFont" id=1]
 size = 40
 outline_color = Color( 0, 0, 0, 1 )
@@ -81,9 +79,11 @@ __meta__ = {
 
 [node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+volume_db = -5.0
 
 [node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+volume_db = 15.0
 [connection signal="button_down" from="Botones/Jugar" to="." method="_on_Jugar_button_down"]
 [connection signal="button_down" from="Botones/Creditos" to="." method="_on_Creditos_button_down"]
 [connection signal="button_down" from="Botones/Salir" to="." method="_on_Salir_button_down"]

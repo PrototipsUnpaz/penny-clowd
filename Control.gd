@@ -1,12 +1,12 @@
 extends Control
 
 func _on_BotonPausa_button_down():
+	$SonidoBoton.play()
 	get_tree().paused = true
 	$Sprite.visible = true
 	$Label.visible = true
 	$BotonPausa.visible = false
 	$BotonVolver.visible = true
-	$SonidoBoton.play()
 	pass 
 
 func _on_BotonVolver_button_down():

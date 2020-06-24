@@ -4,6 +4,7 @@ func _ready():
 	$Soundtrack.play()
 
 func _on_Button2_button_down():
+	$Boton.play()
 	Vidas.vidasNivel = 3
 	Vidas.items = 0
 	Vidas.itemLike = false
@@ -12,10 +13,8 @@ func _on_Button2_button_down():
 	Vidas.quitarItemLike = false
 	Vidas.quitarItemLove = false
 	Vidas.quitarItemSmile = false
-	$VolverajugarBoton.play()
 	get_tree().change_scene('res://escenas/transicion_nivel_1/TransicionNivel1.tscn')
 	pass
-
 
 func _on_Button_button_down():
 	$Boton.play()
