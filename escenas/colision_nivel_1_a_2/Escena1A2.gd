@@ -3,8 +3,15 @@ extends StaticBody2D
 func _on_Area2D_area_entered(_area):
 	$Timer.start()
 	$AudioStreamPlayer.play()
+	Vidas.items = 0
+	Vidas.vidaExtra = false
+	Vidas.itemLike = false
+	Vidas.itemLove = false
+	Vidas.itemSmile = false
+	Vidas.quitarItemLike = false
+	Vidas.quitarItemLove = false
+	Vidas.quitarItemSmile = false
 	pass 
-
 
 func _on_Timer_timeout():
 	if Vidas.nivelUno == true :
