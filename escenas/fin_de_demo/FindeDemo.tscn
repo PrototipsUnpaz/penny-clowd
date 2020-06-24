@@ -9,14 +9,11 @@
 [ext_resource path="res://assets/Sonidos_dos/Fig_Leaf_Times_Two.ogg" type="AudioStream" id=7]
 [ext_resource path="res://assets/botones/boton_volver_al_menu.png" type="Texture" id=8]
 
-
-
-
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 size = 53
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=2]
 size = 81
 font_data = ExtResource( 2 )
 
@@ -92,7 +89,7 @@ rect_min_size = Vector2( 0, 104 )
 size_flags_horizontal = 5
 size_flags_vertical = 8
 size_flags_stretch_ratio = 0.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 text = "¡Ganaste! Gracias por jugar la versión demo de"
 align = 1
 __meta__ = {
@@ -107,7 +104,7 @@ rect_min_size = Vector2( 0, 104 )
 size_flags_horizontal = 5
 size_flags_vertical = 8
 size_flags_stretch_ratio = 0.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

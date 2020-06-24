@@ -9,9 +9,6 @@
 [ext_resource path="res://assets/botones/boton_volver_a_jugar.png" type="Texture" id=7]
 [ext_resource path="res://assets/botones/boton_volver_al_menu.png" type="Texture" id=8]
 
-
-
-
 [sub_resource type="DynamicFont" id=1]
 size = 105
 font_data = ExtResource( 3 )
