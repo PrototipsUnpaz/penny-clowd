@@ -4,7 +4,6 @@ var speed = 200
 var velocity = Vector2(0,0)
 var deshabilitarMovimiento = false 
 
-
 func _physics_process(_delta):
 	if deshabilitarMovimiento == true:
 		return
@@ -23,6 +22,7 @@ func _physics_process(_delta):
 			velocity.y = -1000
 			$AnimatedSprite.play("SALTO")
 			$SonidoSalto.play()
+# warning-ignore:return_value_discarded
 		move_and_slide(velocity,Vector2(1000,0))
 	else:
 		if global_position.y < 310:
@@ -39,13 +39,14 @@ func _physics_process(_delta):
 			velocity.y = -1000
 			$AnimatedSprite.play("SALTO")
 			$SonidoSalto.play()
+# warning-ignore:return_value_discarded
 		move_and_slide(velocity,Vector2(1000,0))
 	pass
 
 func _on_Area2D_area_entered(area):
 	if area.name == "FinalAnimacion" :
 		deshabilitarMovimiento = true
-		$SonidoSalto.volume_db = -50
+		$SonidoSalto.volume_db = -24
 		velocity = Vector2(0,0)
 		$AnimationPlayer.play("RectaFinal")
 		$AnimationPlayer.get_animation("RectaFinal").track_set_key_value(0,0, position)
@@ -66,8 +67,6 @@ func sonido_vida_extra():
 	if Vidas.vidaExtra == true :
 		$SonidoVidaObtenida.play()
 		pass
-		
-
 
 func _on_Timer_timeout():
 	$AnimatedSprite.play("SALTO")

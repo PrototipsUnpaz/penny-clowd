@@ -8,6 +8,9 @@
 [ext_resource path="res://assets/items/like.png" type="Texture" id=6]
 
 
+
+
+
 [sub_resource type="DynamicFont" id=1]
 size = 95
 outline_size = 5

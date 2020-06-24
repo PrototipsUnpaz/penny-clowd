@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/botones/boton_seguir_jugando.png" type="Texture" id=3]
+[ext_resource path="res://assets/takeshi_demo.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/botones/boton_pausa.png" type="Texture" id=5]
+[ext_resource path="res://assets/botones/pausascene.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 85
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="MenuPausa" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonPausa" type="TextureButton" parent="."]
+pause_mode = 2
+margin_left = 1141.05
+margin_top = 21.9855
+margin_right = 1641.05
+margin_bottom = 221.986
+rect_scale = Vector2( 0.3, 0.3 )
+action_mode = 0
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 661.446, 336.905 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 429.631
+margin_top = 253.452
+margin_right = 855.631
+margin_bottom = 357.452
+custom_fonts/font = SubResource( 1 )
+text = "En pausa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonVolver" type="TextureButton" parent="."]
+pause_mode = 2
+visible = false
+margin_left = 475.993
+margin_top = 383.267
+margin_right = 1126.0
+margin_bottom = 583.268
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 3 )
+
+[node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = 5.0
+[connection signal="button_down" from="BotonPausa" to="." method="_on_BotonPausa_button_down"]
+[connection signal="button_down" from="BotonVolver" to="." method="_on_BotonVolver_button_down"]

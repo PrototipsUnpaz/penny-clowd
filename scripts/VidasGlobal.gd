@@ -8,6 +8,7 @@ var itemLike = false
 var itemSmile = false
 
 var posPenny2 = false
+var nivelUno = false
 var nivelDos = false
 var nivelTres = false
 var nivelCuatro = false

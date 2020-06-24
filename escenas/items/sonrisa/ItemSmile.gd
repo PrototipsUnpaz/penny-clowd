@@ -1,6 +1,5 @@
 extends Node2D
 
-
 func _on_Area2D_area_entered(_area):
 		$SonidoItem.play()
 		Vidas.itemSmile = true
