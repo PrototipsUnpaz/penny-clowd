@@ -12,7 +12,7 @@
 [ext_resource path="res://escenas/colision_nivel_1_a_2/Escena1A2.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 25.0137, 77.2244 )
+extents = Vector2( 30.9678, 175.239 )
 
 [node name="nivel_2" type="Node2D"]
 script = ExtResource( 1 )
@@ -154,7 +154,7 @@ position = Vector2( 8315.87, 11.6964 )
 position = Vector2( 14846.9, 15.4285 )
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 10 )]
-position = Vector2( 9723.74, 289.891 )
+position = Vector2( 9723.74, 291 )
 scale = Vector2( 0.9, 0.9 )
 
 [node name="MUSICOFF" type="Area2D" parent="."]

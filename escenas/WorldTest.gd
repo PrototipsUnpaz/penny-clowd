@@ -30,7 +30,6 @@ func quitar_item_like():
 		pass
 
 func _on_FinalAnimacion_area_entered(_area):
-	$Sountrack.volume_db = -25
 	$UI/MenuPausa.visible = false
 	pass 
 

@@ -26,6 +26,10 @@ __meta__ = {
 position = Vector2( 137.498, 543.28 )
 scale = Vector2( 0.25, 0.25 )
 
+[node name="Player2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 12967.5, 549 )
+scale = Vector2( 0.25, 0.25 )
+
 [node name="FondoMuestra" parent="." instance=ExtResource( 5 )]
 
 [node name="GeneradorEnemigos" parent="." instance=ExtResource( 4 )]

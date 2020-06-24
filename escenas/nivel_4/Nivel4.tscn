@@ -177,7 +177,7 @@ position = Vector2( 9185.24, 160.423 )
 obstaculo = "love"
 
 [node name="ColisionFinal" parent="." instance=ExtResource( 6 )]
-position = Vector2( 11003, 286 )
+position = Vector2( 11003, 291.728 )
 scale = Vector2( 0.9, 0.9 )
 
 [node name="FinalAnimacion" type="Area2D" parent="."]
