@@ -1,9 +1,11 @@
 extends Node2D
 
 func _ready():
+	$Sountrack.play()
 	quitar_item_love()
 	quitar_item_like()
 	quitar_item_sonrisa()
+	Vidas.nivelUno = true
 	Vidas.nivelDos = false
 	Vidas.posPenny2 = false
 	pass
@@ -28,6 +30,9 @@ func quitar_item_like():
 		pass
 
 func _on_FinalAnimacion_area_entered(_area):
-	$Sountrack.volume_db = -25
-	#$Sountrack.stop()
+	$UI/MenuPausa.visible = false
+	pass 
+
+func _on_MUSICOFF_area_entered(area):
+	$Sountrack.stop()
 	pass 

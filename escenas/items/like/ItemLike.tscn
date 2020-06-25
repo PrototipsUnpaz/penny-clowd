@@ -1,25 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://escenas/items/like/ItemLike.gd" type="Script" id=1]
 [ext_resource path="res://assets/items/like_uno.png" type="Texture" id=2]
-[ext_resource path="res://assets/Sonidos_dos/item_opcion_3.ogg" type="AudioStream" id=3]
+[ext_resource path="res://escenas/items/like/ItemLike.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 107.187
 
 [node name="ItemLike" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 
-[node name="Area2D" type="Area2D" parent="Sprite"]
+[node name="Item" type="Area2D" parent="Sprite"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Item"]
 position = Vector2( 0.924662, 5.54777 )
 shape = SubResource( 1 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-[connection signal="area_entered" from="Sprite/Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Sprite/Item" to="." method="_on_Item_area_entered"]

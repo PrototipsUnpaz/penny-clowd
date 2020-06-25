@@ -6,8 +6,6 @@ var itemlove = preload("res://escenas/items/corazon/ItemLove.tscn")
 
 export (String, "love", "smite" ,"like") var obstaculo = "smite"
 
-
-
 func _on_VisibilityNotifier2D_screen_entered():
 	if obstaculo == "smite":
 		var instanciasmite = itemsmite.instance()
@@ -21,5 +19,7 @@ func _on_VisibilityNotifier2D_screen_entered():
 		var instacialove = itemlove.instance()
 		add_child(instacialove)
 	pass 
-
-
+	
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()
+	pass 

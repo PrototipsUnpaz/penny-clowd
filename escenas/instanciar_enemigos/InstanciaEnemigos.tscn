@@ -10,3 +10,4 @@ modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
 position = Vector2( 2.18469, 2.38328 )
 scale = Vector2( 5.58783, 2.86691 )
 [connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

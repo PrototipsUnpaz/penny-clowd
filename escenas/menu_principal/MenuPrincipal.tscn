@@ -72,16 +72,18 @@ margin_top = 660.573
 margin_right = 170.302
 margin_bottom = 715.573
 custom_fonts/font = SubResource( 1 )
-text = "v.0.1.0"
+text = "v.1.0.0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Soundtrack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+volume_db = -5.0
 
 [node name="SonidoBoton" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+volume_db = 15.0
 [connection signal="button_down" from="Botones/Jugar" to="." method="_on_Jugar_button_down"]
 [connection signal="button_down" from="Botones/Creditos" to="." method="_on_Creditos_button_down"]
 [connection signal="button_down" from="Botones/Salir" to="." method="_on_Salir_button_down"]

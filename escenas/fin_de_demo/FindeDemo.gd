@@ -13,6 +13,7 @@ func _on_Button2_button_down():
 	Vidas.quitarItemLike = false
 	Vidas.quitarItemLove = false
 	Vidas.quitarItemSmile = false
+	Vidas.nivelUno = false
 	Vidas.nivelDos = false
 	Vidas.nivelTres = false
 	Vidas.nivelCuatro = false
@@ -30,6 +31,7 @@ func _on_Button_button_down():
 	Vidas.quitarItemLike = false
 	Vidas.quitarItemLove = false
 	Vidas.quitarItemSmile = false
+	Vidas.nivelUno = false
 	Vidas.nivelDos = false
 	Vidas.nivelTres = false
 	Vidas.nivelCuatro = false

@@ -14,7 +14,6 @@ func _on_Timer_timeout():
 	$Timer2.start()
 	pass
 
-
 func _on_Timer2_timeout():
 	ir_al_menu_principal()
 	pass 

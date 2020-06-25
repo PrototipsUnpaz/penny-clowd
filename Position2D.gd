@@ -25,4 +25,6 @@ func _on_VisibilityNotifier2D_screen_entered():
 		add_child(instaciacirculo)
 	pass 
 
-
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()
+	pass 

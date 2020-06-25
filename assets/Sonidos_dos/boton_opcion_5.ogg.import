@@ -11,5 +11,5 @@ dest_files=[ "res://.import/boton_opcion_5.ogg-46f996117d8114ab23f5b08972e91b3a.
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

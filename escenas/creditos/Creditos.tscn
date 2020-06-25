@@ -5,6 +5,11 @@
 [ext_resource path="res://assets/menu_principal/creditos2.jpg" type="Texture" id=3]
 [ext_resource path="res://assets/Sonidos_dos/boton_opcion_5.ogg" type="AudioStream" id=4]
 
+
+
+
+
+
 [node name="Creditos" type="Node2D"]
 script = ExtResource( 1 )
 

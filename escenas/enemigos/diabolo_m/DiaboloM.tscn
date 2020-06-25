@@ -1,16 +1,17 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/enemigos/diabolo_m/diaboloM2.png" type="Texture" id=1]
-[ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.gd" type="Script" id=2]
+[ext_resource path="res://escenas/enemigos/diabolo_m/DiaboloM.gd" type="Script" id=1]
+[ext_resource path="res://assets/enemigos/diabolo_m/diaboloM2.png" type="Texture" id=2]
 [ext_resource path="res://assets/enemigos/diabolo_m/diaboloM1.png" type="Texture" id=3]
 [ext_resource path="res://assets/enemigos/diabolo_m/diaboloM3.png" type="Texture" id=4]
+
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4000.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "animacion",
 "speed": 7.5
@@ -19,12 +20,14 @@ animations = [ {
 [node name="DiaboloM" type="KinematicBody2D"]
 scale = Vector2( 0.2, 0.2 )
 collision_layer = 4
-script = ExtResource( 2 )
+collision_mask = 2
+script = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -1.90735e-06, 0 )
 scale = Vector2( 0.2, 0.2 )
 collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2( 0.2, 0.2 )

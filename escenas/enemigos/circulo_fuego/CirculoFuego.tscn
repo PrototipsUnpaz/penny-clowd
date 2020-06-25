@@ -1,12 +1,13 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.gd" type="Script" id=1]
-[ext_resource path="res://assets/enemigos/circulo_fuego/fuego.png" type="Texture" id=2]
-[ext_resource path="res://assets/enemigos/circulo_fuego/fuego2.png" type="Texture" id=3]
+[ext_resource path="res://assets/enemigos/circulo_fuego/fuego.png" type="Texture" id=1]
+[ext_resource path="res://assets/enemigos/circulo_fuego/fuego2.png" type="Texture" id=2]
+[ext_resource path="res://escenas/enemigos/circulo_fuego/CirculoFuego.gd" type="Script" id=3]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -19,7 +20,7 @@ extents = Vector2( 11.1234, 3.28184 )
 position = Vector2( 8, -85.4075 )
 scale = Vector2( 0.785387, 1.20792 )
 frames = SubResource( 1 )
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -31,5 +32,5 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 84.2691, 0.968613 )
 z_index = 2
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

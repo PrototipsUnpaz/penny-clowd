@@ -3,8 +3,10 @@ extends Node2D
 
 func _ready():
 	$Timer.start()
+	Vidas.nivelUno = false
 	Vidas.nivelDos = false
 	Vidas.nivelTres = true
+	Vidas.nivelCuatro = false
 	pass
 
 func ir_al_nivel_3():

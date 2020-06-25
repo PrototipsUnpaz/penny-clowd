@@ -1,5 +1,22 @@
 extends Node2D
 
+func _ready():
+	$Timer.start()
+	$Control/Label.text = "X " + String(Vidas.vidasNivel)
+	$SonidoColision.play()
+	pass
+
+func _on_Timer_timeout():
+	if Vidas.nivelUno == true:
+		volver_a_iniciar()
+	if Vidas.nivelDos == true:
+		volver_nivel_2()
+	if Vidas.nivelTres == true:
+		volver_nivel_3()
+	if Vidas.nivelCuatro == true:
+		volver_nivel_4()
+	pass 
+	
 func volver_a_iniciar():
 	get_tree().change_scene("res://escenas/transicion_nivel_1/TransicionNivel1.tscn")
 	pass
@@ -15,35 +32,3 @@ func volver_nivel_3():
 func volver_nivel_4():
 	get_tree().change_scene("res://escenas/transicion_nivel_4/TransicionNivel4.tscn")
 	pass
-
-func chequear_nivel_3():
-	if Vidas.nivelTres == true:
-		volver_nivel_3()
-	else: 
-		chequear_nivel_4()
-	pass 
-
-func chequear_nivel_4():
-	if Vidas.nivelCuatro == true:
-		volver_nivel_4()
-	else: 
-		volver_a_iniciar()
-	pass 
-
-func _ready():
-	$Timer.start()
-	$Control/Label.text = "X " + String(Vidas.vidasNivel)
-	$SonidoColision.play()
-	pass
-
-
-func _on_Timer_timeout():
-	if Vidas.nivelDos == true:
-		volver_nivel_2()
-	else: 
-		chequear_nivel_3()
-	pass 
-	
-	
-
-	
